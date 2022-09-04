@@ -1,3 +1,22 @@
+// --------------------------------------PALINN-----------------------------------------
+// Xét các số tự nhiên có N chữ số thỏa mãn tính chất sau:
+// - Là số đối xứng
+// - Số đó chia hết cho M
+// Ví dụ: N=3, M=9 ta có 10 số 171, 252, 333, 414, 585, 666, 747, 828, 909, 999 là
+// số đối xứng và chia hết cho 9.
+// Yêu cầu: Cho N, M và K
+// - Hãy đếm số lượng số đối xứng có N chữ số và chia hết cho M.
+// - Nếu sắp xếp các số theo thứ tự tăng dần thì số thứ K là số nào?
+// Dữ liệu vào trong file “PALINN.INP” có dạng:
+// - Dòng thứ nhất gồm 2 số N và M (2<N<40, 0<M<100)
+// - Dòng thứ hai gồm một số K
+// Kết quả ra file “PALINN.OUT” có dạng:
+// - Dòng đầu là số lượng số được xét
+// - Dòng thứ hai là số thứ K
+//        PALINN.INP PALINN.OUT
+//        3 9        10
+//        3          333
+
 // dynamic programming digit
 
 #include <bits/stdc++.h>
