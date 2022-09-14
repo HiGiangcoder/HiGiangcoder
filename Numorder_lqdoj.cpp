@@ -6,17 +6,10 @@ using ll = long long;
 
 ll numrow, numcol, numkth;
 
-ll Sqrt(ll number) { // find res * res <= number; res -> max
-	ll sqrt_num = sqrt(number);
-	for (ll res = sqrt_num + 3; res >= sqrt_num - 3; res --) {
-		if (res * res <= number) return res;
-	}
-}
-
 bool check(ll binary_answer) {
 	ll cnt = 0;	// count i^2 + j^2 <= binary_answer
 	for (ll i = 1; i * i <= binary_answer && i <= numrow; i ++) {
-		cnt += min(Sqrt(binary_answer - i * i), numcol);
+		cnt += min((ll)sqrt(binary_answer - i * i), numcol);
 		// count j: j^2 <= binary_answer - i^2    <=>   j <= sqrt(binary_answer - i^2)
 	}
 	if (cnt < numkth) return false;
@@ -52,3 +45,4 @@ int main()
 
     return 0;
 }
+
