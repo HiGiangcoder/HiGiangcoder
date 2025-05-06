@@ -1,0 +1,913 @@
+{
+    "Default": [],
+    "making an appointment": [
+        {
+            "word": "takeout",
+            "meaning": "đồ ăn mang đi",
+            "example": "I will order some takeout from Mixifood.",
+            "correct": 3
+        },
+        {
+            "word": "eat out",
+            "meaning": "ăn ngoài",
+            "example": "Do you want to eat out tonight?",
+            "correct": 1
+        },
+        {
+            "word": "reserve",
+            "meaning": "đặt trước",
+            "example": "I reserve a table at Mixifood.",
+            "correct": 7
+        },
+        {
+            "word": "available",
+            "meaning": "sẵn có",
+            "example": "I am available tomorrow.",
+            "correct": 4
+        },
+        {
+            "word": "awesome",
+            "meaning": "tuyệt vời",
+            "example": "Congratulations! You did an awesome job!",
+            "correct": 8
+        },
+        {
+            "word": "rather",
+            "meaning": "thà, thích",
+            "example": "Would you rather cook or eat out?",
+            "correct": 6
+        },
+        {
+            "word": "plan",
+            "meaning": "lên kế hoạch",
+            "example": "We need to plan our trip carefully.",
+            "correct": 5
+        },
+        {
+            "word": "pick up",
+            "meaning": "đón",
+            "example": "She picks me up at the airport.",
+            "correct": 7
+        },
+        {
+            "word": "convenient",
+            "meaning": "tiện lợi",
+            "example": "It's convenient to have a grocery store nearby.",
+            "correct": 2
+        },
+        {
+            "word": "affordable",
+            "meaning": "vừa túi tiền",
+            "example": "Tiki offers things at affordable prices.",
+            "correct": 1
+        },
+        {
+            "word": "meet up",
+            "meaning": "gặp gỡ",
+            "example": "I often meet up with my friends.",
+            "correct": 4
+        },
+        {
+            "word": "catch up",
+            "meaning": "cập nhật tình hình",
+            "example": "We finally catch up with the team after a long time.",
+            "correct": 5
+        },
+        {
+            "word": "go out",
+            "meaning": "ra ngoài chơi",
+            "example": "Would you like to go out for a walk?",
+            "correct": 9
+        },
+        {
+            "word": "message",
+            "meaning": "tin nhắn, thông điệp",
+            "example": "She sent a message to confirm the meeting.",
+            "correct": 9
+        },
+        {
+            "word": "mix up",
+            "meaning": "nhầm lẫn",
+            "example": "I get confused and mix up the two appointments.",
+            "correct": 7
+        },
+        {
+            "word": "apologize",
+            "meaning": "xin lỗi (do mình gây nên)",
+            "example": "She apologizes to me for being rude.",
+            "correct": 10
+        },
+        {
+            "word": "service",
+            "meaning": "dịch vụ",
+            "example": "The service at the restaurant was excellent.",
+            "correct": 5
+        },
+        {
+            "word": "chef",
+            "meaning": "đầu bếp",
+            "example": "She is a head chef at a five-star hotel.",
+            "correct": 6
+        },
+        {
+            "word": "rare",
+            "meaning": "hiếm",
+            "example": "This is a rare opportunity to see the comet.",
+            "correct": 3
+        },
+        {
+            "word": "vendor",
+            "meaning": "người bán hàng (rong)",
+            "example": "I sometimes buy food from a street vendor.",
+            "correct": 5
+        },
+        {
+            "word": "terrible",
+            "meaning": "kinh khủng",
+            "example": "The weather was terrible during our vacation.",
+            "correct": 2
+        }
+    ],
+    "family": [
+        {
+            "word": "remind",
+            "meaning": "nhắc nhở",
+            "example": "My wife reminds me about our anniversary.",
+            "correct": 7
+        },
+        {
+            "word": "responsible",
+            "meaning": "có trách nhiệm",
+            "example": "My father is responsible for our family's well-being.",
+            "correct": 10
+        },
+        {
+            "word": "care",
+            "meaning": "sự quan tâm",
+            "example": "He's good at taking care of his cat.",
+            "correct": 6
+        },
+        {
+            "word": "twin",
+            "meaning": "anh em sinh đôi",
+            "example": "They are identical twins.",
+            "correct": 5
+        },
+        {
+            "word": "behavior",
+            "meaning": "hành vi",
+            "example": "Bad behaviors are not accepted here.",
+            "correct": 7
+        },
+        {
+            "word": "raise",
+            "meaning": "nuôi",
+            "example": "My mom raised me to become a strong person.",
+            "correct": 3
+        },
+        {
+            "word": "close",
+            "meaning": "gần gũi, thân thiết",
+            "example": "I am very close to my sister.",
+            "correct": 8
+        },
+        {
+            "word": "strict",
+            "meaning": "nghiêm khắc",
+            "example": "A strict parent teaches children discipline.",
+            "correct": 3
+        },
+        {
+            "word": "encourage",
+            "meaning": "(v) Động viên",
+            "example": "I encourage her to join the contest.",
+            "correct": 2
+        },
+        {
+            "word": "take after",
+            "meaning": "(v) Trông giống, noi theo",
+            "example": "All her children takke after her.",
+            "correct": 2
+        },
+        {
+            "word": "principle",
+            "meaning": "(n) Nguyên tắc",
+            "example": "He explains the principles behind his leadership style.",
+            "correct": 1
+        },
+        {
+            "word": "relative",
+            "meaning": "(n) Họ hàng",
+            "example": "Hoa is a close relative of mine.",
+            "correct": 5
+        },
+        {
+            "word": "get together",
+            "meaning": "(v) Tụ tập",
+            "example": "I get together with my best friends to catch up every weekend.",
+            "correct": 4
+        },
+        {
+            "word": "uncle",
+            "meaning": "(n) Cậu, chú",
+            "example": "Her aunt and uncle live in Da Nang city.",
+            "correct": 6
+        },
+        {
+            "word": "cousin",
+            "meaning": "(n) Anh chị em họ",
+            "example": "We realize that she is my distant cousin.",
+            "correct": 7
+        },
+        {
+            "word": "childhood",
+            "meaning": "(n) Tuổi thơ ấu",
+            "example": "I still remember many childhood memories.",
+            "correct": 3
+        },
+        {
+            "word": "similar",
+            "meaning": "(adj) Giống nhau",
+            "example": "All new smartphones look similar.",
+            "correct": 2
+        },
+        {
+            "word": "communicate",
+            "meaning": "(v) Giao tiếp",
+            "example": "Humans can communicate with dogs through emotions.",
+            "correct": 5
+        },
+        {
+            "word": "discuss",
+            "meaning": "(v) Thảo luận",
+            "example": "I discuss the job offer with them.",
+            "correct": 3
+        },
+        {
+            "word": "provide",
+            "meaning": "(v) Cung cấp",
+            "example": "Her family provides her with lots of money.",
+            "correct": 9
+        },
+        {
+            "word": "generation",
+            "meaning": "(n) Thế hệ",
+            "example": "He believes future generations will do better.",
+            "correct": 4
+        },
+        {
+            "word": "gap",
+            "meaning": "(n) Khoảng cách",
+            "example": "The gap in income divides people.",
+            "correct": 5
+        },
+        {
+            "word": "senior",
+            "meaning": "(adj) Lớn tuổi hơn",
+            "example": "Senior citizens should receive careful consideration.",
+            "correct": 6
+        },
+        {
+            "word": "bring up",
+            "meaning": "(v) Nuôi nấng",
+            "example": "His grandfather brought him up.",
+            "correct": 3
+        },
+        {
+            "word": "peace",
+            "meaning": "(n) Bình an",
+            "example": "Please leave me in peace.",
+            "correct": 4
+        }
+    ],
+    "paper": [
+        {
+            "word": "semantic",
+            "meaning": "(adj) ngữ nghĩa",
+            "example": "The semantic analysis of the text revealed deeper meanings.",
+            "correct": 13
+        },
+        {
+            "word": "pseudo",
+            "meaning": "(adj) giả, không thật",
+            "example": "The pseudo-scientific theory was quickly debunked.",
+            "correct": 10
+        },
+        {
+            "word": "crux",
+            "meaning": "(n) điểm then chốt",
+            "example": "The crux of the argument was hard to understand.",
+            "correct": 13
+        },
+        {
+            "word": "adequate",
+            "meaning": "(adj) đầy đủ, thỏa đáng",
+            "example": "The resources were adequate to complete the project.",
+            "correct": 5
+        },
+        {
+            "word": "pseudo ground-truth",
+            "meaning": "(n) dữ liệu giả làm chuẩn",
+            "example": "The model was trained using pseudo ground-truth data.",
+            "correct": 10
+        },
+        {
+            "word": "argue",
+            "meaning": "(v) tranh luận",
+            "example": "They argue about politics every evening.",
+            "correct": 10
+        },
+        {
+            "word": "matter",
+            "meaning": "(n) vấn đề, (v) có ý nghĩa",
+            "example": "This matter needs immediate attention.",
+            "correct": 13
+        },
+        {
+            "word": "ambiguous",
+            "meaning": "(adj) mơ hồ, không rõ ràng",
+            "example": "The instructions were ambiguous and confusing.",
+            "correct": 14
+        },
+        {
+            "word": "intuitively",
+            "meaning": "(adv) một cách trực giác",
+            "example": "She intuitively knew the answer.",
+            "correct": 12
+        },
+        {
+            "word": "confuse",
+            "meaning": "(v) làm lẫn lộn, gây nhầm lẫn",
+            "example": "The complex instructions confused the students.",
+            "correct": 11
+        },
+        {
+            "word": "among",
+            "meaning": "(prep) giữa, trong số",
+            "example": "She was among the top students in her class.",
+            "correct": 6
+        },
+        {
+            "word": "hence",
+            "meaning": "(adv) do đó, vì vậy",
+            "example": "He was late, hence he missed the meeting.",
+            "correct": 2
+        },
+        {
+            "word": "convincingly",
+            "meaning": "(adv) một cách thuyết phục",
+            "example": "She argued her point convincingly.",
+            "correct": 3
+        },
+        {
+            "word": "treat",
+            "meaning": "(v) đối xử, điều trị",
+            "example": "The doctor will treat the patient with care.",
+            "correct": 4
+        },
+        {
+            "word": "insight",
+            "meaning": "(n) sự thấu hiểu, cái nhìn sâu sắc",
+            "example": "His insight into the problem was invaluable.",
+            "correct": 3
+        },
+        {
+            "word": "sufficient",
+            "meaning": "(adj) đủ, thỏa đáng",
+            "example": "The evidence was sufficient to convict the suspect.",
+            "correct": 3
+        },
+        {
+            "word": "concretely",
+            "meaning": "(adv) một cách cụ thể",
+            "example": "The plan was concretely outlined in the document.",
+            "correct": 3
+        },
+        {
+            "word": "separate",
+            "meaning": "(v) tách ra, (adj) riêng biệt",
+            "example": "They decided to separate the tasks among the team members.",
+            "correct": 2
+        },
+        {
+            "word": "pipeline",
+            "meaning": "(n) quy trình xử lý, đường ống",
+            "example": "The data pipeline was optimized for efficiency.",
+            "correct": 7
+        },
+        {
+            "word": "category-wise",
+            "meaning": "(adv) theo từng loại",
+            "example": "The data was analyzed category-wise.",
+            "correct": 4
+        }
+    ],
+    "paper 2": [
+        {
+            "word": "candidate",
+            "meaning": "(n) ứng viên",
+            "example": "She is a strong candidate for the position.",
+            "correct": 1
+        },
+        {
+            "word": "consider",
+            "meaning": "(v) xem xét, cân nhắc",
+            "example": "We need to consider all options before deciding.",
+            "correct": 2
+        },
+        {
+            "word": "evolution",
+            "meaning": "(n) sự tiến hóa, phát triển",
+            "example": "The evolution of technology has been rapid.",
+            "correct": 0
+        },
+        {
+            "word": "adapt",
+            "meaning": "(v) thích nghi",
+            "example": "The species adapted to the changing environment.",
+            "correct": 2
+        },
+        {
+            "word": "adjust",
+            "meaning": "(v) điều chỉnh",
+            "example": "He adjusted the settings to improve performance.",
+            "correct": 1
+        },
+        {
+            "word": "threshold",
+            "meaning": "(n) ngưỡng",
+            "example": "The noise threshold was set at 85 decibels.",
+            "correct": 0
+        },
+        {
+            "word": "partition",
+            "meaning": "(n) sự phân chia, (v) chia ra",
+            "example": "The partition of the room created more space.",
+            "correct": 1
+        },
+        {
+            "word": "experimental",
+            "meaning": "(adj) thử nghiệm",
+            "example": "The experimental results were promising.",
+            "correct": 0
+        },
+        {
+            "word": "various",
+            "meaning": "(adj) nhiều, đa dạng",
+            "example": "There are various reasons for his success.",
+            "correct": 0
+        },
+        {
+            "word": "benchmark",
+            "meaning": "(n) tiêu chuẩn, (v) đánh giá",
+            "example": "The new model set a benchmark for performance.",
+            "correct": 0
+        },
+        {
+            "word": "demonstrate",
+            "meaning": "(v) chứng minh, biểu diễn",
+            "example": "She demonstrated how to solve the problem.",
+            "correct": 1
+        },
+        {
+            "word": "superiority",
+            "meaning": "(n) sự vượt trội",
+            "example": "The superiority of the new design was evident.",
+            "correct": 1
+        },
+        {
+            "word": "alternative",
+            "meaning": "(n) sự thay thế, (adj) thay thế",
+            "example": "We need to find an alternative solution.",
+            "correct": 4
+        },
+        {
+            "word": "fundamental",
+            "meaning": "(adj) cơ bản, nền tảng",
+            "example": "The fundamental principles of physics are important.",
+            "correct": 1
+        },
+        {
+            "word": "field",
+            "meaning": "(n) lĩnh vực, cánh đồng",
+            "example": "He is an expert in the field of biology.",
+            "correct": 5
+        },
+        {
+            "word": "significantly",
+            "meaning": "(adv) đáng kể",
+            "example": "The results improved significantly after the changes.",
+            "correct": 1
+        },
+        {
+            "word": "along",
+            "meaning": "(prep) dọc theo, (adv) cùng",
+            "example": "We walked along the beach.",
+            "correct": 3
+        },
+        {
+            "word": "figure",
+            "meaning": "(n) hình ảnh, con số, (v) tính toán",
+            "example": "The figure in the report was inaccurate.",
+            "correct": 1
+        },
+        {
+            "word": "rise",
+            "meaning": "(v) tăng lên, (n) sự tăng lên",
+            "example": "The rise in temperature was noticeable.",
+            "correct": 0
+        },
+        {
+            "word": "rely",
+            "meaning": "(v) dựa vào",
+            "example": "We rely on our team to complete the project.",
+            "correct": 0
+        },
+        {
+            "word": "annotate",
+            "meaning": "(v) chú thích",
+            "example": "The researcher annotated the text with additional notes.",
+            "correct": 1
+        },
+        {
+            "word": "alleviate",
+            "meaning": "(v) làm giảm bớt",
+            "example": "The medicine helped to alleviate the pain.",
+            "correct": 1
+        },
+        {
+            "word": "attempt",
+            "meaning": "(v) cố gắng, (n) sự cố gắng",
+            "example": "He made an attempt to solve the problem.",
+            "correct": 1
+        },
+        {
+            "word": "toward",
+            "meaning": "(prep) hướng về",
+            "example": "She took a step toward the door.",
+            "correct": 3
+        },
+        {
+            "word": "leverage",
+            "meaning": "(v) tận dụng, (n) đòn bẩy",
+            "example": "We need to leverage our resources effectively.",
+            "correct": 0
+        },
+        {
+            "word": "numerous",
+            "meaning": "(adj) nhiều, vô số",
+            "example": "There were numerous errors in the report.",
+            "correct": 1
+        },
+        {
+            "word": "adequately",
+            "meaning": "(adv) một cách đầy đủ",
+            "example": "The problem was adequately addressed.",
+            "correct": 0
+        },
+        {
+            "word": "critical",
+            "meaning": "(adj) quan trọng, phê bình",
+            "example": "The critical review helped improve the product.",
+            "correct": 2
+        },
+        {
+            "word": "prior",
+            "meaning": "(adj) trước, ưu tiên",
+            "example": "Prior knowledge is required for this course.",
+            "correct": 1
+        },
+        {
+            "word": "borrow",
+            "meaning": "(v) mượn",
+            "example": "Can I borrow your pen?",
+            "correct": 0
+        },
+        {
+            "word": "mitigate",
+            "meaning": "(v) giảm nhẹ",
+            "example": "Efforts were made to mitigate the effects of the disaster.",
+            "correct": 0
+        },
+        {
+            "word": "potential",
+            "meaning": "(n) tiềm năng, (adj) tiềm tàng",
+            "example": "The potential for growth is significant.",
+            "correct": 1
+        },
+        {
+            "word": "cause",
+            "meaning": "(n) nguyên nhân, (v) gây ra",
+            "example": "The cause of the accident is still unknown.",
+            "correct": 3
+        },
+        {
+            "word": "entire",
+            "meaning": "(adj) toàn bộ",
+            "example": "The entire team worked hard to meet the deadline.",
+            "correct": 0
+        },
+        {
+            "word": "satisfyingly",
+            "meaning": "(adv) một cách thỏa mãn",
+            "example": "The problem was solved satisfyingly.",
+            "correct": 1
+        },
+        {
+            "word": "certain",
+            "meaning": "(adj) chắc chắn, nhất định",
+            "example": "I am certain that he will come.",
+            "correct": 0
+        },
+        {
+            "word": "conclusion",
+            "meaning": "(n) kết luận",
+            "example": "The conclusion of the study was surprising.",
+            "correct": 0
+        },
+        {
+            "word": "qualitative",
+            "meaning": "(adj) định tính",
+            "example": "The qualitative analysis provided deeper insights.",
+            "correct": 0
+        },
+        {
+            "word": "ablation",
+            "meaning": "(n) sự loại bỏ",
+            "example": "The ablation study showed the impact of each feature.",
+            "correct": 1
+        },
+        {
+            "word": "blender",
+            "meaning": "(n) máy xay",
+            "example": "She used a blender to make the smoothie.",
+            "correct": 1
+        },
+        {
+            "word": "experiment",
+            "meaning": "(n) thí nghiệm",
+            "example": "The experiment yielded interesting results.",
+            "correct": 0
+        },
+        {
+            "word": "anchor",
+            "meaning": "(n) neo, (v) neo giữ",
+            "example": "The ship dropped anchor in the harbor.",
+            "correct": 1
+        },
+        {
+            "word": "relate",
+            "meaning": "(v) liên quan, kể lại",
+            "example": "The story relates to his childhood experiences.",
+            "correct": 0
+        },
+        {
+            "word": "similar",
+            "meaning": "(adj) tương tự",
+            "example": "The two cases are very similar.",
+            "correct": 4
+        },
+        {
+            "word": "pretty",
+            "meaning": "(adv) khá, (adj) xinh đẹp",
+            "example": "She is pretty good at playing the piano.",
+            "correct": 2
+        },
+        {
+            "word": "regard",
+            "meaning": "(v) coi như, (n) sự quan tâm",
+            "example": "He is highly regarded in his field.",
+            "correct": 1
+        },
+        {
+            "word": "insufficient",
+            "meaning": "(adj) không đủ",
+            "example": "The evidence was insufficient to convict him.",
+            "correct": 0
+        },
+        {
+            "word": "perspective",
+            "meaning": "(n) quan điểm, góc nhìn",
+            "example": "From my perspective, the plan is flawed.",
+            "correct": 0
+        },
+        {
+            "word": "utilized",
+            "meaning": "(v) sử dụng",
+            "example": "The resources were fully utilized.",
+            "correct": 1
+        },
+        {
+            "word": "degradation",
+            "meaning": "(n) sự suy giảm",
+            "example": "The degradation of the environment is a serious issue.",
+            "correct": 1
+        },
+        {
+            "word": "observe",
+            "meaning": "(v) quan sát",
+            "example": "The scientist observed the reaction carefully.",
+            "correct": 3
+        },
+        {
+            "word": "derive",
+            "meaning": "(v) rút ra, bắt nguồn từ",
+            "example": "The conclusion was derived from the data.",
+            "correct": 0
+        },
+        {
+            "word": "avoid",
+            "meaning": "(v) tránh",
+            "example": "He tried to avoid making the same mistake.",
+            "correct": 1
+        },
+        {
+            "word": "ensures",
+            "meaning": "(v) đảm bảo",
+            "example": "The system ensures data security.",
+            "correct": 2
+        }
+    ],
+    "sharing feelings": [
+        {
+            "word": "reach out",
+            "meaning": "(v) Liên lạc",
+            "example": "I reaches out to me for help.",
+            "correct": 4
+        },
+        {
+            "word": "secret",
+            "meaning": "(n) Bí mật",
+            "example": "She cannot keep a secret.",
+            "correct": 2
+        },
+        {
+            "word": "issue",
+            "meaning": "(n) Vấn đề",
+            "example": "Cheating is a big issue in a marriage.",
+            "correct": 1
+        },
+        {
+            "word": "surprised",
+            "meaning": "(adj) Bất ngờ",
+            "example": "I am surprised by my friends.",
+            "correct": 4
+        },
+        {
+            "word": "reaction",
+            "meaning": "(n) Phản ứng",
+            "example": "Surprise is her immediate reaction.",
+            "correct": 1
+        },
+        {
+            "word": "scary",
+            "meaning": "(adj) Đáng sợ",
+            "example": "She never watches scary movies.",
+            "correct": 4
+        },
+        {
+            "word": "wish",
+            "meaning": "(v) Mong ước",
+            "example": "She wishes to travel around the world.",
+            "correct": 2
+        },
+        {
+            "word": "regret",
+            "meaning": "(v) Tiếc nuối, ân hận",
+            "example": "She regret being rude to my brother.",
+            "correct": 1
+        },
+        {
+            "word": "pleasant",
+            "meaning": "(adj) dễ chịu",
+            "example": "Her visit was such a pleasant surprise.",
+            "correct": 4
+        },
+        {
+            "word": "cheer up",
+            "meaning": "(v) Động viên",
+            "example": "Her friend tries to cheer her up after the breakup.",
+            "correct": 1
+        },
+        {
+            "word": "find out",
+            "meaning": "(v) Phát hiện",
+            "example": "Visit our website to find out more information.",
+            "correct": 8
+        },
+        {
+            "word": "nervous",
+            "meaning": "(adj) lo lắng",
+            "example": "She is nervous about the interview tomorrow.",
+            "correct": 6
+        },
+        {
+            "word": "fear",
+            "meaning": "(n) Nỗi sợ",
+            "example": "He is hiding in fear from his mother.",
+            "correct": 5
+        },
+        {
+            "word": "excited",
+            "meaning": "(adj) Vui mừng, phấn khởi",
+            "example": "She is obviously excited about her new work.",
+            "correct": 0
+        },
+        {
+            "word": "burden",
+            "meaning": "(n) Gánh nặng",
+            "example": "Don't be a burden to your family.",
+            "correct": 1
+        },
+        {
+            "word": "hope",
+            "meaning": "hy vọng",
+            "example": "I hope to get 7.0 on the IELTS test.",
+            "correct": 6
+        },
+        {
+            "word": "upset",
+            "meaning": "(adj) buồn bã",
+            "example": "He is upset about his grades.",
+            "correct": 4
+        },
+        {
+            "word": "desire",
+            "meaning": "(n) Khao khát",
+            "example": "She has a strong desire to eat something sour.",
+            "correct": 1
+        },
+        {
+            "word": "lonely",
+            "meaning": "(adj) cô đơn",
+            "example": "She feels lonely despite being surrounded by people.",
+            "correct": 0
+        },
+        {
+            "word": "stress",
+            "meaning": "(n) áp lực",
+            "example": "Working under stress is a necessary skill.",
+            "correct": 5
+        },
+        {
+            "word": "angry",
+            "meaning": "(adj) Giận dữ",
+            "example": "I am really angry with my parents.",
+            "correct": 3
+        },
+        {
+            "word": "understand",
+            "meaning": "(v) Hiểu",
+            "example": "My parents never fully understand me.",
+            "correct": 7
+        },
+        {
+            "word": "shy",
+            "meaning": "(adj) Xấu hổ, nhút nhát",
+            "example": "She is a shy person.",
+            "correct": 4
+        },
+        {
+            "word": "individual",
+            "meaning": "(n) Cá nhân",
+            "example": "What can I do to make society better as an individual?",
+            "correct": 3
+        },
+        {
+            "word": "anxiety",
+            "meaning": "(n) Sự lo lắng",
+            "example": "I have anxiety about public speaking.",
+            "correct": 2
+        },
+        {
+            "word": "attention",
+            "meaning": "(n) Sự chú ý",
+            "example": "Please pay attention to the talk.",
+            "correct": 3
+        },
+        {
+            "word": "release",
+            "meaning": "(v) Giải phóng",
+            "example": "Writing is a great way to release anger.",
+            "correct": 2
+        },
+        {
+            "word": "toxic",
+            "meaning": "(adj) Độc hại",
+            "example": "Factories release so much toxic waste.",
+            "correct": 4
+        },
+        {
+            "word": "happiness",
+            "meaning": "(n) niềm hạnh phúc",
+            "example": "Eating is true happiness.",
+            "correct": 4
+        },
+        {
+            "word": "mood",
+            "meaning": "(n) Tâm trạng",
+            "example": "Nice weather puts me in a good mood.",
+            "correct": 5
+        }
+    ]
+}
