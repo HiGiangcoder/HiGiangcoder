@@ -5,7 +5,14 @@
 
 ## Các mục tiêu của bản thân:
 - Trau dồi tiếng Anh, tiếng Trung.
-- Trở thành chuyên gia trong lĩnh vực AI.
+- Trở thành chuyên gia trong lĩnh vực AI, cụ thể hơn là về Computer Vision.
+
+## Nội dung 
+- Trong đây bao gồm các nội dung mà mình đã tích lũy được, bao gồm:
+  - Một số tài liệu CP còn sót lại sau quá trình ôn thi khi mình học cấp 3.
+  - Các tài liệu, kinh nghiệm trong quá trình research của mình.
+  - Các tài liệu trong quá trình mình học đại học
+
 ---
 Rất vui được làm quen và mong có cơ hội học hỏi thêm từ các bạn.
 ...
