@@ -1,0 +1,40 @@
+#include<bits/stdc++.h>
+#define fi first
+#define se second
+using namespace std;
+using ll = long long;
+using ii = pair<int, int>;
+
+const int MOD = 1e9 + 7;
+const int MAX = 1e5 + 5;
+
+#define TASK ""
+
+int n, q;
+map<string, string> mp;
+
+int main() {
+    ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+    if (fopen(TASK".inp", "r")) {
+        freopen(TASK".inp", "r", stdin);
+        freopen(TASK".out", "w", stdout);
+    }
+
+    cin >> n >> q;
+    for (int i = 0; i < n; i++) {
+        string s, t;
+        cin >> s >> t;
+        mp[s] = t;
+    }
+    for (int i = 0; i < q; i++) {
+        string s;
+        cin >> s;
+
+        string ans = "Chua Dang Ky!";
+        if (mp.count(s)) ans = mp[s];
+
+        cout << ans << '\n';
+    }
+    
+    return 0;
+}

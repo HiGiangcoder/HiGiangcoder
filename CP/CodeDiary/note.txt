@@ -1,0 +1,6 @@
+Cách đặt tên cho một folder để code tạm thời:
+Y + <2 số cuối của nằm> + <tên tháng> + <ngày>
+vd: ngày 25 tháng 8 năm 2024: Y24august25
+
+Dòng này phải được xóa đi
+

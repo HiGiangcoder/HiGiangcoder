@@ -1,0 +1,15 @@
+1. Số lượng gói tin: 1465
+
+2. Số lượng tin UDP: 59
+
+3. Số gói TCP: 661
+
+4. Số IP giao tiếp với IP: 10.4.1.101: 7
+
+5. Có bao nhiêu trang web được truy cập trong file pcap, bao nhiêu trang web xài https
+- Có 5 Trang web được truy cập trong file pcap.
+- Có 5 trang web xài https
+
+6. 00:08:02:1c:47:ae
+7. invest_20.dll
+8. AAC940F9906034938CD657ED2BA21BC675E6AE20
