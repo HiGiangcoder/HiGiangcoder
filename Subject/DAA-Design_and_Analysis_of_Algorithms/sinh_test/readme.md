@@ -77,8 +77,3 @@ $1 \le l \le r \le n$
 * Truy vấn 1: đoạn [1, 3] → max(2, 1, 5) = 5
 * Truy vấn 2: đoạn [2, 5] → max(1, 5, 3, 4) = 5
 * Truy vấn 3: đoạn [3, 3] → max(5) = 5
-
----
-
-Bạn có muốn mình viết thêm **phần mô tả dành cho người ra đề** (tức là phần “internal statement” gồm thông tin input/output files, time limit, memory limit, format chính xác khi nộp) như khi dùng trong hệ thống chấm tự động (như Codeforces / Polygon) không?
-Nếu bạn dùng `testlib.h`, phần đó sẽ rất hữu ích.
