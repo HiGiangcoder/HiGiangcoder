@@ -43,7 +43,7 @@ Giới hạn $1 ≤ n ≤ 100 000, −10^5 ≤ a_i ≤ 10^5$.
 
 ### Bài 2: Đồ thị
 
-Đồ thị có hướng $n$ đỉnh $m$ cạnh trọng số dương, tìm độ dài đường đi ngắn nhất từ $1$ đến $n$. 
+Cho **Đa đồ thị có hướng** $n$ đỉnh $m$ cạnh trọng số dương, tìm độ dài đường đi ngắn nhất từ $1$ đến $n$. 
 
 - Input: $n m$ và $m$ dòng $u_i v_i w_i$. 
 - Output: độ dài hoặc −1. 
