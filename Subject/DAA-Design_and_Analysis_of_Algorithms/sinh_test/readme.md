@@ -1,5 +1,5 @@
 # Bài tập sinh test
-
+[link tải folder sinh test]
 ## Nội dung bài tập về nhà.
 Nội dung bài tập về nhà được mô tả tại phần cuối trong [slide (bấm vào đây để mở slide)](DAA.pdf) hoặc được cung cấp ngay dưới đây:
 
