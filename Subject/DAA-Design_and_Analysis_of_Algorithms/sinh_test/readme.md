@@ -2,7 +2,7 @@
 [link tải folder sinh test](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FHiGiangcoder%2FHiGiangcoder%2Ftree%2Fmain%2FSubject%2FDAA-Design_and_Analysis_of_Algorithms%2Fsinh_test)
 
 ## Nội dung bài tập về nhà.
-Nội dung bài tập về nhà được mô tả tại phần cuối trong [slide (bấm vào đây để mở slide)](DAA.pdf) hoặc được cung cấp ngay dưới đây:
+Nội dung bài tập về nhà được cung cấp ngay dưới đây:
 
 
 ### Bài 1: Tổng dãy số
@@ -49,10 +49,11 @@ Cho **Đa đồ thị có hướng** $n$ đỉnh $m$ cạnh trọng số dương
 - Input: $n m$ và $m$ dòng $u_i v_i w_i$. 
 - Output: độ dài hoặc −1. 
 
-Giới hạn: $2 ≤ n ≤ 2000, m ≤ 5000, 1 ≤ w_i ≤ 10^9$
+Giới hạn: $2 ≤ n ≤ 100000, m ≤ 200000, 1 ≤ w_i ≤ 10^9$
 
-- Subtask 1: $n≤200$, $m≤1000$; 
-- Subtask 2: Không còn giới hạn gì thêm.
+- Subtask 1: $n≤10$, $m≤20$; 
+- Subtask 2: $n \le 1000$;
+- Subtask 3: Không còn giới hạn gì thêm.
 
 
 **Input ví dụ 1**
