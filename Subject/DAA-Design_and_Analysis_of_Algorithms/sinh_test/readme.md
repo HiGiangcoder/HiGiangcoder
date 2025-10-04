@@ -157,11 +157,13 @@ Gọi:
 
 Điểm của bạn sẽ được tính dựa trên công thức:
 
-$$score = f(n, s, p, q) = 5 \times n + 2 \times s + 3 \times \frac{q+1}{p+1}$$
+$$score = f(n, s, p, q) = 3 \times n + 2 \times s + 5 \times \frac{q+1}{p+1}$$
 
 Trong trường hợp bài có nhiều subtask, gọi $k$ là số lượng subtask, điểm của bạn sẽ được tính dựa trên công thức:
 
 $$score = \frac1k \sum_{i=1}^{k} f(n_i, s_i, p_i, q_i)$$
+
+Trong trường hợp checker viết sai, thay vì 0 điểm, bạn sẽ bị **trừ $20\%$ số điểm hiện có** của bạn.
 
 *Chúc các bạn làm bài tốt!*
 
