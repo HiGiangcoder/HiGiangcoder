@@ -1,86 +1,119 @@
 #!/bin/bash
-set -e
+set -uo pipefail  # bỏ -e để không dừng khi lỗi
 
-# =====================================
-# 1️  Biên dịch chương trình cần kiểm tra
-# =====================================
+TIME_LIMIT=1      # seconds
+MEM_LIMIT_MB=256
+MEM_LIMIT_KB=$((MEM_LIMIT_MB*1024))
+
 if [ $# -lt 1 ]; then
-    echo "Usage: bash check.sh <file.cpp>"
-    exit 1
+  echo "Usage: $0 <solution.cpp or executable>"
+  exit 1
 fi
 
-target_cpp=$1
-target_bin="submission"
+SRC="$1"
+# compile solution if .cpp
+if [[ "$SRC" == *.cpp ]]; then
+  EXEC="${SRC%.cpp}"
+  echo "[Compile] Compiling $SRC -> $EXEC"
+  if ! g++ -std=c++17 -O2 -pipe -static -s "$SRC" -o "$EXEC"; then
+    echo "❌ Compile failed"
+    exit 1
+  fi
+else
+  EXEC="$SRC"
+  if [ ! -x "$EXEC" ]; then echo "Error: $EXEC not found or not executable"; exit 1; fi
+fi
 
-echo "[Compile] Compiling $target_cpp -> $target_bin"
-g++ -std=c++17 -O2 -pipe -static -s "$target_cpp" -o "$target_bin"
+# compile validator/checker if exist
+[ -f validator.cpp ] && g++ -std=c++17 -O2 -pipe -static -s validator.cpp -o validator 2>/dev/null || true
+[ -f checker.cpp ]   && g++ -std=c++17 -O2 -pipe -static -s checker.cpp   -o checker   2>/dev/null || true
 
-# =====================================
-# 2️  Cấu hình giới hạn
-# =====================================
-TIME_LIMIT=1.0     # giây
-MEM_LIMIT=262144   # KB ~ 256 MB
+# find tests
+shopt -s nullglob
+tests=(tests/test*/)
+shopt -u nullglob
 
-echo "Starting tests (time limit: ${TIME_LIMIT}s, mem limit: ${MEM_LIMIT}KB)"
+if [ ${#tests[@]} -eq 0 ]; then
+  echo "No tests found in tests/. Run gen.sh first."
+  exit 1
+fi
 
-# =====================================
-# 3️  Hàm đo thời gian + bộ nhớ và so sánh kết quả
-# =====================================
-run_test() {
-    local id=$1
-    local input="tests/test${id}/input.in"
-    local expected="tests/test${id}/output.out"
+pass=0; fail=0; total=0
 
-    echo "--- Running test${id} ---"
+for d in "${tests[@]}"; do
+  d=${d%/}
+  base=$(basename "$d")
+  input="$d/input.in"
+  expected="$d/output.out"
+  userout="$d/output_user.out"
+  timefile=$(mktemp)
+  stderrfile=$(mktemp)
 
-    if [ ! -f "$input" ]; then
-        echo "⚠️ Missing input file: $input"
-        return
+  total=$((total+1))
+  printf "\n--- %s ---\n" "$base"
+
+  # --- check input/output existence ---
+  if [ ! -f "$input" ]; then
+    echo "❌ Missing input: $input"
+    fail=$((fail+1))
+    continue
+  fi
+  if [ ! -f "$expected" ]; then
+    echo "❌ Missing expected: $expected"
+    fail=$((fail+1))
+    continue
+  fi
+
+  # --- validator ---
+  if [ -x ./validator ]; then
+    if ! ./validator < "$input" > /dev/null 2>&1; then
+      echo "❌ Validator failed for $base"
+      fail=$((fail+1))
+      continue
     fi
+  fi
 
-    # --- Chạy submission ---
-    /usr/bin/time -f "%e %M" -o temp_usage.txt ./"$target_bin" < "$input" > temp_output.txt 2>/dev/null || true
-    read runtime memused_kb < <(cat temp_usage.txt)
-    rm -f temp_usage.txt
+  # --- run solution ---
+  timeout "${TIME_LIMIT}s" /usr/bin/time -f "%e %M" -o "$timefile" ./"$EXEC" < "$input" > "$userout" 2> "$stderrfile"
+  exit_code=$?
 
-    memused_mb=$(echo "scale=2; $memused_kb / 1024" | bc)
+  runtime="0.00"; memkb=0
+  if [ -s "$timefile" ]; then
+    read runtime memkb < "$timefile"
+  fi
+  memmb=$(awk "BEGIN{printf \"%.2f\", ${memkb}/1024}")
 
-    local status="✅ OK"
+  status="OK"
+  if [ $exit_code -eq 124 ]; then
+    status="TLE"
+  elif [ $exit_code -ne 0 ]; then
+    status="RTE"
+  fi
+  if (( memkb > MEM_LIMIT_KB )); then
+    status="MLE"
+  fi
 
-    # Kiểm tra giới hạn
-    if (( $(echo "$runtime > $TIME_LIMIT" | bc -l) )); then
-        status="❌ TLE (${runtime}s)"
-    fi
-    if (( $(echo "$memused_kb > $MEM_LIMIT" | bc -l) )); then
-        status="❌ MLE (${memused_mb}MB)"
-    fi
-
-    # --- Chạy checker ---
-    /usr/bin/time -f "%e %M" -o temp_usage_checker.txt ./checker "$input" "$expected" temp_output.txt >/dev/null 2>&1 || status="❌ WA"
-    read checker_time checker_mem_kb < <(cat temp_usage_checker.txt)
-    rm -f temp_usage_checker.txt
-
-    checker_mem_mb=$(echo "scale=2; $checker_mem_kb / 1024" | bc)
-
-    echo "$status | Time: ${runtime}s | Mem: ${memused_mb}MB | Checker: ${checker_time}s / ${checker_mem_mb}MB"
-
-    rm -f temp_output.txt
-}
-
-# =====================================
-# 4️ Chạy toàn bộ test và đo tổng thời gian
-# =====================================
-start_time=$(date +%s.%N)
-
-for i in $(seq 1 50); do
-    if [ -f "tests/test${i}/input.in" ]; then
-        run_test $i
+  # --- checker or diff ---
+  if [ "$status" = "OK" ]; then
+    if [ -x ./checker ]; then
+      ./checker "$input" "$userout" "$expected" > /dev/null 2> checker_err.txt
+      chk_rc=$?
+      if [ $chk_rc -ne 0 ]; then
+        status="WA"
+      fi
     else
-        echo "⚠️ test${i} not found, skipping..."
+      if ! cmp -s <(tr -s ' \t\r\n' '\n' < "$userout") <(tr -s ' \t\r\n' '\n' < "$expected"); then
+        status="WA"
+      fi
     fi
+  fi
+
+  printf "%-4s | time=%ss | mem=%sMB\n" "$status" "$runtime" "$memmb"
+
+  if [ "$status" = "OK" ]; then pass=$((pass+1)); else fail=$((fail+1)); fi
+
+  rm -f "$timefile" "$stderrfile" checker_err.txt
 done
 
-end_time=$(date +%s.%N)
-total_time=$(echo "$end_time - $start_time" | bc)
-
-echo "✅ All tests completed in ${total_time}s."
+echo
+echo "Summary: passed=$pass failed=$fail total=$total"
