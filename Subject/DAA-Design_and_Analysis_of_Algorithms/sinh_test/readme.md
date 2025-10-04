@@ -166,6 +166,8 @@ $$score = \frac1k \sum_{i=1}^{k} f(n_i, s_i, p_i, q_i)$$
 
 Trong trường hợp checker viết sai, thay vì 0 điểm, bạn sẽ bị **trừ $20\%$ số điểm hiện có** của bạn.
 
+Nếu bạn lười viết validate dẫn đến việc test của bạn bị sai form, bạn bị trừ 1 điểm.
+
 *Chúc các bạn làm bài tốt!*
 
 ## Ví dụ:
