@@ -50,10 +50,10 @@ void genStressCase() {
 
 int main(int argc, char* argv[]) {
     registerGen(argc, argv, 1);
-    int seed = atoi(argv[1]);
+    int type = atoi(argv[1]);
+    int seed = atoi(argv[2]);
     rnd.setSeed(seed);
-
-    int type = (argc > 1) ? atoi(argv[1]) : 1;
+    
     if (type == 1) genNormalCase();
     else if (type == 2) genSpecialCase();
     else if (type == 3) genEdgeCase();
