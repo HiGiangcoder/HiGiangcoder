@@ -6,7 +6,7 @@ Nội dung bài tập về nhà được cung cấp ngay dưới đây:
 
 
 ### Bài 1: Tổng dãy số
-Cho mảng n số nguyên, tính tổng tất cả phần tử. 
+Cho mảng $n$ số nguyên, tính tổng tất cả phần tử. 
 
 - Input: $n$ và dãy $a_1, a_2, \dots, a_n$. 
 - Output: tổng $n$ phần tử.
@@ -46,7 +46,7 @@ Giới hạn $1 ≤ n ≤ 100 000, −10^5 ≤ a_i ≤ 10^5$.
 
 Cho **Đa đồ thị có hướng** $n$ đỉnh $m$ cạnh trọng số dương, tìm độ dài đường đi ngắn nhất từ $1$ đến $n$. 
 
-- Input: $n m$ và $m$ dòng $u_i v_i w_i$. 
+- Input: $n$ $m$ và $m$ dòng $u_i v_i w_i$. 
 - Output: độ dài hoặc −1. 
 
 Giới hạn: $2 ≤ n ≤ 100000, m ≤ 200000, 1 ≤ w_i ≤ 10^9$
@@ -164,7 +164,7 @@ Trong trường hợp bài có nhiều subtask, gọi $k$ là số lượng subt
 
 $$score = \frac1k \sum_{i=1}^{k} f(n_i, s_i, p_i, q_i)$$
 
-Trong trường hợp checker viết sai, thay vì 0 điểm, bạn sẽ bị **trừ $20\%$ số điểm hiện có** của bạn.
+Trong trường hợp checker viết sai, thay vì 0 điểm, bạn sẽ bị **trừ 20% số điểm hiện có** của bạn.
 
 Nếu bạn lười viết validate dẫn đến việc test của bạn bị sai form, bạn bị trừ 1 điểm.
 
