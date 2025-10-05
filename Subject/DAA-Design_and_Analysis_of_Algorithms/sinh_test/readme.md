@@ -199,7 +199,7 @@ $$\text{max}(a_l, a_{l+1}, \ldots, a_r)$$
 
 * Với mỗi truy vấn, in ra **một số nguyên duy nhất trên một dòng**, là giá trị lớn nhất trong đoạn $[l, r]$.
 
-## Ràng buộc
+#### Ràng buộc
 
 Ràng buộc               
 $1 \le n, q \le 100{,}000$ 
@@ -207,7 +207,7 @@ $-10^9 \le a_i \le 10^9$
 $1 \le l \le r \le n$   
 
 
-## Subtasks
+#### Subtasks
 
 | Subtask | Giới hạn             | Điểm |
 | ------- | -------------------- | ---- |
@@ -216,9 +216,9 @@ $1 \le l \le r \le n$
 
 ---
 
-## Ví dụ
+#### Ví dụ
 
-### **Input**
+##### **Input**
 
 ```
 5 3
@@ -228,7 +228,7 @@ $1 \le l \le r \le n$
 3 3
 ```
 
-### **Output**
+##### **Output**
 
 ```
 5
@@ -238,7 +238,7 @@ $1 \le l \le r \le n$
 
 ---
 
-## Giải thích
+#### Giải thích
 
 * Truy vấn 1: đoạn [1, 3] → max(2, 1, 5) = 5
 * Truy vấn 2: đoạn [2, 5] → max(1, 5, 3, 4) = 5
