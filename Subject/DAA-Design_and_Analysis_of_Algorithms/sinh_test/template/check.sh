@@ -11,7 +11,7 @@ if [ $# -lt 1 ]; then
 fi
 
 SRC="$1"
-# compile solution if .cpp
+# --- compile solution ---
 if [[ "$SRC" == *.cpp ]]; then
   EXEC="${SRC%.cpp}"
   echo "[Compile] Compiling $SRC -> $EXEC"
@@ -21,14 +21,17 @@ if [[ "$SRC" == *.cpp ]]; then
   fi
 else
   EXEC="$SRC"
-  if [ ! -x "$EXEC" ]; then echo "Error: $EXEC not found or not executable"; exit 1; fi
+  if [ ! -x "$EXEC" ]; then
+    echo "Error: $EXEC not found or not executable"
+    exit 1
+  fi
 fi
 
-# compile validator/checker if exist
+# --- compile validator/checker nếu có ---
 [ -f validator.cpp ] && g++ -std=c++17 -O2 -pipe -static -s validator.cpp -o validator 2>/dev/null || true
 [ -f checker.cpp ]   && g++ -std=c++17 -O2 -pipe -static -s checker.cpp   -o checker   2>/dev/null || true
 
-# find tests
+# --- lấy danh sách test ---
 shopt -s nullglob
 tests=(tests/test*/)
 shopt -u nullglob
@@ -38,6 +41,9 @@ if [ ${#tests[@]} -eq 0 ]; then
   exit 1
 fi
 
+# --- tạo thư mục outputs/ ---
+mkdir -p outputs
+
 pass=0; fail=0; total=0
 
 for d in "${tests[@]}"; do
@@ -45,14 +51,14 @@ for d in "${tests[@]}"; do
   base=$(basename "$d")
   input="$d/input.in"
   expected="$d/output.out"
-  userout="$d/output_user.out"
+  userout="outputs/${base}_user.out"
   timefile=$(mktemp)
   stderrfile=$(mktemp)
 
   total=$((total+1))
   printf "\n--- %s ---\n" "$base"
 
-  # --- check input/output existence ---
+  # --- check input/output tồn tại ---
   if [ ! -f "$input" ]; then
     echo "❌ Missing input: $input"
     fail=$((fail+1))
@@ -73,7 +79,7 @@ for d in "${tests[@]}"; do
     fi
   fi
 
-  # --- run solution ---
+  # --- chạy solution ---
   timeout "${TIME_LIMIT}s" /usr/bin/time -f "%e %M" -o "$timefile" ./"$EXEC" < "$input" > "$userout" 2> "$stderrfile"
   exit_code=$?
 
@@ -93,7 +99,7 @@ for d in "${tests[@]}"; do
     status="MLE"
   fi
 
-  # --- checker or diff ---
+  # --- checker hoặc diff ---
   if [ "$status" = "OK" ]; then
     if [ -x ./checker ]; then
       ./checker "$input" "$userout" "$expected" > /dev/null 2> checker_err.txt
@@ -102,7 +108,7 @@ for d in "${tests[@]}"; do
         status="WA"
       fi
     else
-      if ! cmp -s <(tr -s ' \t\r\n' '\n' < "$userout") <(tr -s ' \t\r\n' '\n' < "$expected"); then
+      if ! diff -q <(tr -s ' \t\r\n' '\n' < "$userout") <(tr -s ' \t\r\n' '\n' < "$expected") >/dev/null; then
         status="WA"
       fi
     fi
@@ -117,3 +123,4 @@ done
 
 echo
 echo "Summary: passed=$pass failed=$fail total=$total"
+echo "Outputs saved to ./outputs/"

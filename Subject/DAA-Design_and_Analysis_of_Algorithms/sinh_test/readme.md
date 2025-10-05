@@ -136,7 +136,7 @@ Giới hạn $1 ≤ n ≤ 12, m ≤ n(n−1)/2$
 
 
 ## Cách nộp
-Yêu cầu bài nộp phải dựa trên template đã được cung cấp ở phần [mẫu bài tập trong ví dụ](#-ví-dụ).
+Yêu cầu bài nộp phải dựa trên template đã được cung cấp ở phần ví dụ phía dưới hoặc [Bấm vào đây](template/readme.md).
 
 Bài nộp dựa trên yêu cầu viết `solution.cpp`, 1 hoặc nhiều file `gen.cpp`, `checker.cpp`, `validator.cpp`, đồng thời phải tinh chỉnh lại `gen.sh` (`check.sh` có thể không cần chỉnh sửa vì không cần thiết).
 
