@@ -181,8 +181,8 @@ Dưới đây là ví dụ bài nộp cho bài toán được mô tả dưới �
 Cho một mảng gồm $n$ phần tử nguyên $a_1, a_2, \ldots, a_n$.
 
 Bạn cần xử lý $q$ truy vấn.
-Mỗi truy vấn gồm hai số nguyên ( l, r ) ((1 \le l \le r \le n)).
-Với mỗi truy vấn, hãy in ra **giá trị lớn nhất của mảng ( a )** trong đoạn từ chỉ số ( l ) đến ( r ), tức là:
+Mỗi truy vấn gồm hai số nguyên $l$, $r$ $(1 \le l \le r \le n)$.
+Với mỗi truy vấn, hãy in ra **giá trị lớn nhất của mảng $a$** trong đoạn từ chỉ số $l$ đến $r$, tức là:
 
 $$\text{max}(a_l, a_{l+1}, \ldots, a_r)$$
 
