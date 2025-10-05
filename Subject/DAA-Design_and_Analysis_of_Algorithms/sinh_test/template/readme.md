@@ -22,7 +22,6 @@ rmq_project/
 │
 ├── testlib.h           # Thư viện hỗ trợ sinh test, validator, checker (theo chuẩn testlib).
 │
-├── test.sh             # Script Linux tổng hợp: compile, generate, validate, run test.
 ├── gen.sh              # Sinh toàn bộ bộ test (Linux Bash version).
 ├── check.sh            # Kiểm tra kết quả chạy (Linux Bash version).
 │
