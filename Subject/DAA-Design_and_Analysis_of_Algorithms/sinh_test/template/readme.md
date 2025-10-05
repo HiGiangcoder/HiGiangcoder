@@ -84,7 +84,7 @@ Sử dụng file `gen.sh` để tạo bộ test bao gồm 4 loại case:
 
 Ví dụ:
 ```bash
-./gen.sh 42
+bash gen.sh 42
 ```
 Nếu không cung cấp base_seed, mặc định là 1000.
 Output ví dụ:
