@@ -158,7 +158,7 @@ Gọi:
 
 Điểm của bạn sẽ được tính dựa trên công thức:
 
-$$score = f(n, s, p, q) = 3 \times n + 2 \times s + 5 \times \frac{q+1}{p+1}$$
+$$score = f(n, s, p, q) = 3 \times n + 2 \times s + 5 \times \sqrt{\frac{q+1}{p+1}}$$
 
 Trong trường hợp bài có nhiều subtask, gọi $k$ là số lượng subtask, điểm của bạn sẽ được tính dựa trên công thức:
 
