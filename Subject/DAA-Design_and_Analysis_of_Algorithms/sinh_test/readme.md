@@ -1,6 +1,8 @@
 # Bài tập sinh test
 [link tải folder sinh test](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FHiGiangcoder%2FHiGiangcoder%2Ftree%2Fmain%2FSubject%2FDAA-Design_and_Analysis_of_Algorithms%2Fsinh_test)
 
+[Gợi ý cách làm](hint.md)
+
 ## Nội dung bài tập về nhà.
 Nội dung bài tập về nhà được cung cấp ngay dưới đây:
 
