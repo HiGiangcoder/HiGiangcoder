@@ -1,121 +1,150 @@
 #!/usr/bin/env python3
-import os, sys, subprocess, time, platform, resource, psutil
-from pathlib import Path
+import os, sys, subprocess, time, platform, psutil
 
-TIME_LIMIT = 1.0
-MEM_LIMIT_MB = 256
-MEM_LIMIT_BYTES = MEM_LIMIT_MB * 1024 * 1024
+if platform.system() != "Windows":
+    import resource
 
-def find_compiler():
-    for c in ["g++", "clang++"]:
-        if subprocess.run(["which", c], capture_output=True).returncode == 0:
-            return c
-    return "g++"
+# ---------------------- Utility ----------------------
+def compile_code(src, out_name):
+    ext = os.path.splitext(src)[1]
+    if ext == ".cpp":
+        compiler = "clang++" if platform.system() == "Darwin" else "g++"
+        cmd = [compiler, src, "-O2", "-std=c++17", "-o", out_name]
+    elif ext == ".c":
+        compiler = "clang" if platform.system() == "Darwin" else "gcc"
+        cmd = [compiler, src, "-O2", "-std=c17", "-o", out_name]
+    else:
+        raise Exception(f"Unsupported file type: {src}")
 
-def compile_cpp(src, output):
-    compiler = find_compiler()
-    print(f"[Compile] {src} -> {output} ({compiler})")
-    result = subprocess.run([compiler, "-std=c++17", "-O2", "-pipe", "-s", src, "-o", output])
-    if result.returncode != 0:
-        print("❌ Compilation failed")
-        sys.exit(1)
+    print(f"[Compile] {src} -> {out_name} ({compiler})")
+    subprocess.check_call(cmd)
 
-def run_with_limits(exec_path, input_path, output_path):
-    start = time.time()
-    with open(input_path, "r") as fin, open(output_path, "w") as fout:
-        proc = subprocess.Popen([f"./{exec_path}"], stdin=fin, stdout=fout)
-        pid = proc.pid
-        peak_mem = 0
+def get_memory_usage(pid):
+    try:
+        return psutil.Process(pid).memory_info().rss / 1024 / 1024
+    except:
+        return 0.0
 
-        try:
-            while proc.poll() is None:
-                try:
-                    mem = psutil.Process(pid).memory_info().rss
-                except psutil.NoSuchProcess:
-                    break
-                peak_mem = max(peak_mem, mem)
-                if peak_mem > MEM_LIMIT_BYTES:
-                    proc.kill()
-                    return "MLE", time.time() - start, peak_mem / (1024*1024)
-                if time.time() - start > TIME_LIMIT:
-                    proc.kill()
-                    return "TLE", TIME_LIMIT, peak_mem / (1024*1024)
-                time.sleep(0.005)
-        except KeyboardInterrupt:
-            proc.kill()
-            raise
-
-        runtime = time.time() - start
+def run_with_limits(executable, inp_file, out_file, time_limit=2.0, memory_limit_mb=256):
+    with open(inp_file, "r") as fin, open(out_file, "w") as fout:
+        start = time.time()
         if platform.system() != "Windows":
-            usage = resource.getrusage(resource.RUSAGE_CHILDREN)
-            peak_mem = max(peak_mem, usage.ru_maxrss * 1024)  # ru_maxrss = KB
-        return_code = proc.returncode
+            def set_limits():
+                resource.setrlimit(resource.RLIMIT_AS, (memory_limit_mb * 1024 * 1024, resource.RLIM_INFINITY))
+                resource.setrlimit(resource.RLIMIT_CPU, (int(time_limit) + 1, resource.RLIM_INFINITY))
+            proc = subprocess.Popen([executable], stdin=fin, stdout=fout, preexec_fn=set_limits)
+        else:
+            proc = subprocess.Popen([executable], stdin=fin, stdout=fout)
 
-    if return_code != 0:
-        return "RTE", runtime, peak_mem / (1024*1024)
-    return "OK", runtime, peak_mem / (1024*1024)
+        peak = 0
+        while proc.poll() is None:
+            time.sleep(0.05)
+            peak = max(peak, get_memory_usage(proc.pid))
+            if time.time() - start > time_limit + 0.5:
+                proc.kill()
+                return ("TLE", time.time() - start, peak)
+            if peak > memory_limit_mb:
+                proc.kill()
+                return ("MLE", time.time() - start, peak)
 
+        code = proc.returncode
+        return ("OK" if code == 0 else "RE", time.time() - start, peak)
+
+# ---------------------- Main ----------------------
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python3 check.py <solution.cpp or executable>")
-        sys.exit(1)
+        print("Usage: python check.py <solution.cpp>")
+        return
 
-    src = Path(sys.argv[1])
-    exec_path = src.with_suffix("") if src.suffix == ".cpp" else src
+    sol_src = sys.argv[1]
+    sol_exec = "solution"
+    compile_code(sol_src, sol_exec)
 
-    if src.suffix == ".cpp":
-        compile_cpp(str(src), str(exec_path))
-    elif not exec_path.exists():
-        print(f"❌ Executable not found: {exec_path}")
-        sys.exit(1)
+    if os.path.exists("checker.cpp"): compile_code("checker.cpp", "checker")
+    if os.path.exists("validator.cpp"): compile_code("validator.cpp", "validator")
 
-    if Path("checker.cpp").exists():
-        compile_cpp("checker.cpp", "checker")
-    if not Path("checker").exists():
-        print("❌ checker not found (need checker.cpp or checker binary).")
-        sys.exit(1)
+    # tìm input trong ./tests/**/input.in
+    tests = []
+    if os.path.isdir("tests"):
+        for root, _, files in os.walk("tests"):
+            if "input.in" in files:
+                tests.append(os.path.join(root, "input.in"))
+    else:
+        tests = [f for f in os.listdir() if f.endswith(".inp")]
 
-    if Path("validator.cpp").exists():
-        compile_cpp("validator.cpp", "validator")
+    if not tests:
+        print("Không tìm thấy file test nào (.inp hoặc input.in).")
+        return
 
-    test_dirs = sorted(Path("tests").glob("test*/"))
-    if not test_dirs:
-        print("❌ No test directories in ./tests/")
-        sys.exit(1)
     os.makedirs("outputs", exist_ok=True)
 
-    total, passed, failed = 0, 0, 0
-    for d in test_dirs:
-        total += 1
-        base = d.name
-        inp, exp = d / "input.in", d / "output.out"
-        user_out = Path("outputs") / f"{base}_user.out"
-        print(f"\n--- {base} ---")
+    total = len(tests)
+    passed = 0
+    failed = 0
 
-        if not inp.exists() or not exp.exists():
-            print("❌ Missing input or output")
+    for inp in sorted(tests):
+        test_name = os.path.basename(os.path.dirname(inp)) or os.path.splitext(os.path.basename(inp))[0]
+        out = os.path.join("outputs", f"{test_name}.out")
+
+        print(f"\n--- {test_name} ---")
+
+        # validator
+        if os.path.exists("validator"):
+            val_rc = subprocess.run(["./validator" if platform.system() != "Windows" else "validator.exe"],
+                                    stdin=open(inp),
+                                    stdout=subprocess.DEVNULL,
+                                    stderr=subprocess.DEVNULL).returncode
+            if val_rc != 0:
+                print("❌ Input không hợp lệ (validator lỗi).")
+                failed += 1
+                continue
+
+        # chạy solution
+        verdict, t, mem = run_with_limits(f"./{sol_exec}" if platform.system() != "Windows" else f"{sol_exec}.exe", inp, out)
+        if verdict != "OK":
+            print(f"{verdict} | time={t:.2f}s | mem={mem:.1f}MB")
             failed += 1
             continue
 
-        status, runtime, mem = run_with_limits(exec_path, inp, user_out)
+        # tìm output đúng
+        ans_candidates = [os.path.join(os.path.dirname(inp), "output.out"),
+                          os.path.splitext(inp)[0] + ".ans"]
+        ans = next((a for a in ans_candidates if os.path.exists(a)), None)
 
-        if status == "OK":
-            rc = subprocess.run(
-                ["./checker", str(inp), str(user_out), str(exp)],
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL,
-            ).returncode
-            if rc != 0:
-                status = "WA"
+        if not ans:
+            print(f"⚠️ Không có file output mẫu cho {test_name}")
+            continue
 
-        print(f"{status:>4} | time={runtime:.2f}s | mem={mem:.2f}MB")
-        if status == "OK":
-            passed += 1
+        # so sánh bằng checker
+        if os.path.exists("checker"):
+            cmd = ["./checker" if platform.system() != "Windows" else "checker.exe", inp, out, ans]
+            rc = subprocess.run(cmd).returncode
+            print(f"{'✅ OK' if rc == 0 else '❌ WA'} | time={t:.2f}s | mem={mem:.1f}MB")
+            if rc == 0:
+                passed += 1
+            else:
+                failed += 1
         else:
-            failed += 1
+            with open(out) as f1, open(ans) as f2:
+                if f1.read().strip() == f2.read().strip():
+                    print(f"✅ OK | time={t:.2f}s | mem={mem:.1f}MB")
+                    passed += 1
+                else:
+                    print(f"❌ WA | time={t:.2f}s | mem={mem:.1f}MB")
+                    failed += 1
 
-    print(f"\nSummary: passed={passed} failed={failed} total={total}")
-    print("Outputs saved to ./outputs/")
+    # ---------------------------------------------------------
+    # Tổng kết kết quả
+    # ---------------------------------------------------------
+    print("\n==================== Summary ====================")
+    print(f"Tổng số test : {total}")
+    print(f"✅ Passed     : {passed}")
+    print(f"❌ Failed     : {failed}")
+    print("=================================================")
+    if total > 0:
+        rate = passed / total * 100
+        print(f"🎯 Tỉ lệ đúng : {rate:.2f}%")
+    print("=================================================")
 
 if __name__ == "__main__":
     main()
