@@ -9,7 +9,7 @@
 
 ## Nội dung 
 - Trong đây bao gồm các nội dung mà mình đã tích lũy được, bao gồm:
-  - Một số tài liệu CP còn sót lại sau quá trình ôn thi khi mình học cấp 3.
+  - Một số tài liệu CP còn sót lại sau quá trình ôn thi khi mình học cấp 3 [(Đang biên soạn)](/CP/ICPC/readme.md)
   - Các tài liệu, kinh nghiệm trong quá trình research của mình.
   - Các tài liệu trong quá trình mình học đại học
 
