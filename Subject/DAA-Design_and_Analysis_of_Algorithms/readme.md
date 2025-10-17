@@ -39,3 +39,5 @@ Team 13, bai 3: solution.cpp
 Team 17, bài 2: gen...cpp
 ![alt text](image.png)
 -> Thay bằng ouf.seekEof() để bỏ qua trường hợp cuối file là dấu xuống dòng
+
+![alt text](image-18.png)
