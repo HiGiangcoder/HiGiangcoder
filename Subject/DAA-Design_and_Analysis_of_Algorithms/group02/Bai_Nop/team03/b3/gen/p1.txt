@@ -1,0 +1,316 @@
+p1.txt
+genEdgeCase.cpp
+#include "../testlib.h"
+#include <bits/stdc++.h>
+using namespace std;
+
+void genEdgeCase1() {
+    // n = 1, m = 0
+    cout << 1 << " " << 0 << "\n";
+}
+
+void genEdgeCase2() {
+    // n = 2, m = 0 (không có đường Hamilton)
+    cout << 2 << " " << 0 << "\n";
+}
+
+void genEdgeCase3() {
+    // n = 2, m = 1 (có đường Hamilton)
+    cout << 2 << " " << 1 << "\n1 2\n";
+}
+
+void genEdgeCase4() {
+    // n = 12, m = đầy đủ (complete graph)
+    int n = 12;
+    cout << n << " " << n*(n-1)/2 << "\n";
+    for (int i = 1; i <= n; i++)
+        for (int j = i+1; j <= n; j++)
+            cout << i << " " << j << "\n";
+}
+
+void genEdgeCase5() {
+    // n = 12, m = 0 (đồ thị rỗng)
+    cout << 12 << " " << 0 << "\n";
+}
+
+void genEdgeCase6_duplicateEdges() {
+    // n=5, duplicate edges to test multigraph handling (outside spec — use as internal/extra test)
+    cout << 5 << " " << 8 << "\n";
+    cout << "1 2\n1 2\n2 3\n2 3\n3 4\n4 5\n5 1\n1 3\n";
+}
+
+void genEdgeCase7_selfLoop() {
+    // n=4, has a self-loop (outside spec — use as internal/extra test)
+    cout << 4 << " " << 5 << "\n";
+    cout << "1 1\n1 2\n2 3\n3 4\n4 1\n";
+}
+
+void genEdgeCase8_isolatedLast() {
+    // n=6, last vertex isolated -> catches indexing assumptions
+    cout << 6 << " " << 4 << "\n";
+    cout << "1 2\n2 3\n3 4\n4 5\n";
+}
+
+void genEdgeCase(int type) {
+    if (type == 1) genEdgeCase1();
+    else if (type == 2) genEdgeCase2();
+    else if (type == 3) genEdgeCase3();
+    else if (type == 4) genEdgeCase4();
+    else if (type == 5) genEdgeCase5();
+    else if (type == 6) genEdgeCase6_duplicateEdges();
+    else if (type == 7) genEdgeCase7_selfLoop();
+    else genEdgeCase8_isolatedLast();
+}
+
+int main(int argc, char* argv[]) {
+    registerGen(argc, argv, 1);
+    int type = atoi(argv[1]);
+    int seed = atoi(argv[2]);
+    rnd.setSeed(seed);
+    genEdgeCase(type);
+}genNormalCase.cpp
+#include "../testlib.h"
+#include <bits/stdc++.h>
+using namespace std;
+
+void genNormalCase() {
+    int n = rnd.next(4, 8);
+    vector<pair<int,int>> edges;
+    vector<vector<int>> adj(n+1, vector<int>(n+1, 0));
+
+    // Sinh ngẫu nhiên m cạnh, không trùng
+    int m = rnd.next(n-1, n*(n-1)/2);
+    while ((int)edges.size() < m) {
+        int u = rnd.next(1, n);
+        int v = rnd.next(1, n);
+        if (u == v || adj[u][v]) continue;
+        adj[u][v] = adj[v][u] = 1;
+        edges.push_back({u,v});
+    }
+
+    cout << n << " " << m << "\n";
+    for (auto [u,v] : edges)
+        cout << u << " " << v << "\n";
+}
+int main(int argc, char* argv[]) {
+    registerGen(argc, argv, 1);
+    int type = atoi(argv[1]);
+    int seed = atoi(argv[2]);
+    rnd.setSeed(seed);
+
+    genNormalCase();
+}
+genStressCase.cpp
+#include "../testlib.h"
+#include <bits/stdc++.h>
+using namespace std;
+
+void genStressCase() {
+    int n = 12;
+    vector<pair<int,int>> edges;
+    vector<vector<int>> adj(n+1, vector<int>(n+1, 0));
+
+    int m = rnd.next(n*(n-1)/4, n*(n-1)/2);
+    while ((int)edges.size() < m) {
+        int u = rnd.next(1, n);
+        int v = rnd.next(1, n);
+        if (u == v || adj[u][v]) continue;
+        adj[u][v] = adj[v][u] = 1;
+        edges.push_back({u,v});
+    }
+
+    cout << n << " " << m << "\n";
+    for (auto [u,v] : edges)
+        cout << u << " " << v << "\n";
+}
+
+void genWorstCaseForBruteforce() {
+    int n = 12;
+    vector<pair<int,int>> edges;
+    for (int i = 1; i <= n; ++i)
+        for (int j = i+1; j <= n; ++j)
+            if ((i + j) % 5 != 0) // remove some pattern to foil heuristics
+                edges.push_back({i,j});
+    cout << n << " " << edges.size() << "\n";
+    for (auto &e: edges) cout << e.first << " " << e.second << "\n";
+}
+
+int main(int argc, char* argv[]) {
+    registerGen(argc, argv, 1);
+    int type = atoi(argv[1]);
+    int seed = atoi(argv[2]);
+    rnd.setSeed(seed);
+    if (type == 1) genStressCase();
+    else genWorstCaseForBruteforce();
+}
+print.py
+import os
+
+for file in os.listdir():
+    os.system(f"echo {file}")
+    os.system(f"cat {file}")genSpecialCase.cpp
+#include "../testlib.h"
+#include <bits/stdc++.h>
+using namespace std;
+
+void genLineGraph(int n) {
+    cout << n << " " << n-1 << "\n";
+    for (int i = 1; i < n; i++)
+        cout << i << " " << i+1 << "\n";
+}
+
+void genCycleGraph(int n) {
+    cout << n << " " << n << "\n";
+    for (int i = 1; i < n; i++)
+        cout << i << " " << i+1 << "\n";
+    cout << n << " " << 1 << "\n";
+}
+
+void genAlmostComplete(int n) {
+    vector<pair<int,int>> edges;
+    for (int i = 1; i <= n; i++)
+        for (int j = i+1; j <= n; j++)
+            edges.push_back({i,j});
+    random_shuffle(edges.begin(), edges.end());
+    edges.pop_back(); // xóa 1 cạnh -> vẫn có Hamilton path
+    cout << n << " " << edges.size() << "\n";
+    for (auto [u,v] : edges)
+        cout << u << " " << v << "\n";
+}
+
+void genDisconnected(int n) {
+    // hai thành phần tách biệt
+    int m = n/2 - 1;
+    cout << n << " " << m << "\n";
+    for (int i = 1; i < n/2; i++)
+        cout << i << " " << i+1 << "\n";
+}
+
+void genStarWithCenterHighIndex(int n) {
+    // Star nhưng tâm là đỉnh n -> bắt lỗi ai assume center=1
+    cout << n << " " << n-1 << "\n";
+    for (int i = 1; i < n; ++i) cout << i << " " << n << "\n";
+}
+
+void genTwoComponentsUnequal(int n) {
+    // hai component: một rất nhỏ, một rất lớn (test greedy)
+    int a = 2, b = n - a;
+    cout << n << " " << (a-1) + (b-1) << "\n";
+    for (int i = 1; i < a; ++i) cout << i << " " << i+1 << "\n";
+    for (int i = a+1; i < n; ++i) cout << i << " " << i+1 << "\n";
+}
+
+void genSpecialCase(int type) {
+    if (type == 1) genLineGraph(6);
+    else if (type == 2) genCycleGraph(8);
+    else if (type == 3) genAlmostComplete(10);
+    else if (type == 4) genDisconnected(10);
+    else if (type == 5) genStarWithCenterHighIndex(9);
+    else genTwoComponentsUnequal(10);
+}
+
+int main(int argc, char* argv[]) {
+    registerGen(argc, argv, 1);
+    int type = atoi(argv[1]);
+    int seed = atoi(argv[2]);
+    rnd.setSeed(seed);
+    genSpecialCase(type);
+}
+genGPT.cpp
+#include "../testlib.h"
+#include "bits/stdc++.h"
+using namespace std;
+
+int main(int argc, char **argv) {
+    registerGen(argc, argv, 1);
+    int type = atoi(argv[1]);
+    long long seed = atoll(argv[2]);
+    rnd.setSeed(seed);
+
+    int n, m;
+    vector<pair<int,int>> edges;
+
+    auto add_edge = [&](int u, int v) {
+        if (u == v) return;
+        if (u > v) swap(u, v);
+        if (find(edges.begin(), edges.end(), make_pair(u, v)) == edges.end())
+            edges.push_back({u, v});
+    };
+
+    if (type == 1) { // Complete graph
+        n = rnd.next(4, 7);
+        for (int i = 1; i <= n; i++)
+            for (int j = i + 1; j <= n; j++)
+                add_edge(i, j);
+    }
+
+    else if (type == 2) { // Disconnected
+        n = rnd.next(5, 8);
+        for (int i = 1; i < n / 2; i++) add_edge(i, i + 1);
+        for (int i = n / 2 + 1; i < n; i++) add_edge(i, i + 1);
+    }
+
+    else if (type == 3) { // Line graph
+        n = rnd.next(4, 7);
+        for (int i = 1; i < n; i++) add_edge(i, i + 1);
+    }
+
+    else if (type == 4) { // Star graph
+        n = rnd.next(4, 7);
+        for (int i = 2; i <= n; i++) add_edge(1, i);
+    }
+
+    else if (type == 5) { // Cycle
+        n = rnd.next(4, 7);
+        for (int i = 1; i < n; i++) add_edge(i, i + 1);
+        add_edge(n, 1);
+    }
+
+    else if (type == 6) { // Almost-complete
+        n = rnd.next(5, 8);
+        for (int i = 1; i <= n; i++)
+            for (int j = i + 1; j <= n; j++)
+                add_edge(i, j);
+        if (!edges.empty()) edges.erase(edges.begin() + rnd.next(0, (int)edges.size() - 1));
+    }
+
+    else if (type == 7) { // Random dense
+        n = rnd.next(8, 10);
+        int max_m = n * (n - 1) / 2;
+        m = rnd.next(n, max_m / 3);
+        set<pair<int,int>> used;
+        while ((int)used.size() < m) {
+            int u = rnd.next(1, n);
+            int v = rnd.next(1, n);
+            if (u == v) continue;
+            if (u > v) swap(u, v);
+            used.insert({u, v});
+        }
+        edges.assign(used.begin(), used.end());
+    }
+
+    else if (type == 8) { // Minimal 2 nodes
+        n = 2;
+        add_edge(1, 2);
+    }
+
+    else if (type == 9) { // Single node
+        n = 1;
+    }
+
+    else if (type == 10) { // Two components
+        n = rnd.next(6, 10);
+        int mid = n / 2;
+        for (int i = 1; i < mid; i++) add_edge(i, i + 1);
+        for (int i = mid + 1; i < n; i++) add_edge(i, i + 1);
+    }
+
+    else if (type == 11) { // Oversized test to catch int/unsigned bugs (use in internal testing only)
+        n = 100000; // intentionally outside constraints
+        for (int i = 1; i <= 5; ++i) add_edge(i, i+1);
+    }
+
+    m = (int)edges.size();
+    cout << n << " " << m << "\n";
+    for (auto [u, v] : edges) cout << u << " " << v << "\n";
+}

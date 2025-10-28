@@ -18,22 +18,21 @@ Dưới đây là tổng hợp chi tiết các thuật toán và cấu trúc d�
 ### 3.3. [KMP](3-String/readme.md/#3-kmp-knuth-morris-pratt)
 ### 3.4. [Aho-corasick](3-String/readme.md/#4-aho-corasick)
 ---
-## 4. DP
+## 4. [DP](4-DP/readme.md)
 ### 4.1. DP
 ### 4.2. DP digit
 ### 4.3. DP in DAG
-### 4.4. DP chia để trị
-### 4.5. Các kĩ thuật tối ưu hóa QHD
+### 4.4. Divide & Conquer DP
+### 4.5. Dptimize DP (Knuth / Slope Trick / etc)
 ### 4.6. Convex hull trick
 ### 4.7. DP trên cây
 ### 4.8. DP SOS.
 ---
-## 5. Lý thuyết đồ thị
+## 5. Graph Theory
 ### 5.1. DSU và DSU rollback
-### 5.2. Sắp xếp topo
-### 5.3. Đường đi, chu trình Euler
-### 5.4. Xử lý chu trình âm
-### 5.5. 2-sat
+### 5.2. Đường đi, chu trình Euler
+### 5.3. Xử lý chu trình âm
+### 5.4. 2-sat
 ---
 ### 5.6. Luồng cực đại.
 ---

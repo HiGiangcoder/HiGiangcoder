@@ -1,0 +1,578 @@
+Team: team08, Bài: b3, Solution: solution
+Thời gian thực thi: 3.91s
+Return code: 0
+==================================================
+STDOUT:
+🔍 DEBUG: Starting check.py...
+🔍 DEBUG: Current directory: /home/yangtze/Desktop/HiGiangcoder/Subject/DAA-Design_and_Analysis_of_Algorithms/group02/Bai_Nop/temp_test
+🔍 DEBUG: Files in current directory: ['checker', 'validator', 'testlib.h', 'tests', 'check.py', 'solution.cpp']
+🔍 DEBUG: Solution source: solution.cpp
+🔍 DEBUG: Checking if solution exists: True
+[Compile] solution.cpp -> solution (g++)
+✅ Compilation successful: solution
+🔍 DEBUG: No checker.cpp found
+🔍 DEBUG: No validator.cpp found
+🔍 DEBUG: Found tests directory, scanning for test cases...
+🔍 DEBUG: Scanning tests, files: []
+🔍 DEBUG: Scanning tests/test09, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test09/input.in
+🔍 DEBUG: Scanning tests/test40, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test40/input.in
+🔍 DEBUG: Scanning tests/test07, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test07/input.in
+🔍 DEBUG: Scanning tests/test47, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test47/input.in
+🔍 DEBUG: Scanning tests/test45, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test45/input.in
+🔍 DEBUG: Scanning tests/test35, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test35/input.in
+🔍 DEBUG: Scanning tests/test39, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test39/input.in
+🔍 DEBUG: Scanning tests/test11, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test11/input.in
+🔍 DEBUG: Scanning tests/test21, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test21/input.in
+🔍 DEBUG: Scanning tests/test28, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test28/input.in
+🔍 DEBUG: Scanning tests/test20, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test20/input.in
+🔍 DEBUG: Scanning tests/test32, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test32/input.in
+🔍 DEBUG: Scanning tests/test08, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test08/input.in
+🔍 DEBUG: Scanning tests/test13, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test13/input.in
+🔍 DEBUG: Scanning tests/test30, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test30/input.in
+🔍 DEBUG: Scanning tests/test05, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test05/input.in
+🔍 DEBUG: Scanning tests/test36, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test36/input.in
+🔍 DEBUG: Scanning tests/test24, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test24/input.in
+🔍 DEBUG: Scanning tests/test18, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test18/input.in
+🔍 DEBUG: Scanning tests/test02, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test02/input.in
+🔍 DEBUG: Scanning tests/test46, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test46/input.in
+🔍 DEBUG: Scanning tests/test38, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test38/input.in
+🔍 DEBUG: Scanning tests/test44, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test44/input.in
+🔍 DEBUG: Scanning tests/test37, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test37/input.in
+🔍 DEBUG: Scanning tests/test06, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test06/input.in
+🔍 DEBUG: Scanning tests/test31, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test31/input.in
+🔍 DEBUG: Scanning tests/test23, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test23/input.in
+🔍 DEBUG: Scanning tests/test15, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test15/input.in
+🔍 DEBUG: Scanning tests/test27, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test27/input.in
+🔍 DEBUG: Scanning tests/test50, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test50/input.in
+🔍 DEBUG: Scanning tests/test22, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test22/input.in
+🔍 DEBUG: Scanning tests/test34, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test34/input.in
+🔍 DEBUG: Scanning tests/test48, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test48/input.in
+🔍 DEBUG: Scanning tests/test10, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test10/input.in
+🔍 DEBUG: Scanning tests/test25, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test25/input.in
+🔍 DEBUG: Scanning tests/test42, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test42/input.in
+🔍 DEBUG: Scanning tests/test04, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test04/input.in
+🔍 DEBUG: Scanning tests/test33, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test33/input.in
+🔍 DEBUG: Scanning tests/test26, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test26/input.in
+🔍 DEBUG: Scanning tests/test43, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test43/input.in
+🔍 DEBUG: Scanning tests/test14, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test14/input.in
+🔍 DEBUG: Scanning tests/test03, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test03/input.in
+🔍 DEBUG: Scanning tests/test17, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test17/input.in
+🔍 DEBUG: Scanning tests/test29, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test29/input.in
+🔍 DEBUG: Scanning tests/test49, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test49/input.in
+🔍 DEBUG: Scanning tests/test12, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test12/input.in
+🔍 DEBUG: Scanning tests/test41, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test41/input.in
+🔍 DEBUG: Scanning tests/test01, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test01/input.in
+🔍 DEBUG: Scanning tests/test16, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test16/input.in
+🔍 DEBUG: Scanning tests/test19, files: ['input.in', 'output.out']
+🔍 DEBUG: Found test case: tests/test19/input.in
+🔍 DEBUG: Found 50 test cases: ['tests/test09/input.in', 'tests/test40/input.in', 'tests/test07/input.in', 'tests/test47/input.in', 'tests/test45/input.in', 'tests/test35/input.in', 'tests/test39/input.in', 'tests/test11/input.in', 'tests/test21/input.in', 'tests/test28/input.in', 'tests/test20/input.in', 'tests/test32/input.in', 'tests/test08/input.in', 'tests/test13/input.in', 'tests/test30/input.in', 'tests/test05/input.in', 'tests/test36/input.in', 'tests/test24/input.in', 'tests/test18/input.in', 'tests/test02/input.in', 'tests/test46/input.in', 'tests/test38/input.in', 'tests/test44/input.in', 'tests/test37/input.in', 'tests/test06/input.in', 'tests/test31/input.in', 'tests/test23/input.in', 'tests/test15/input.in', 'tests/test27/input.in', 'tests/test50/input.in', 'tests/test22/input.in', 'tests/test34/input.in', 'tests/test48/input.in', 'tests/test10/input.in', 'tests/test25/input.in', 'tests/test42/input.in', 'tests/test04/input.in', 'tests/test33/input.in', 'tests/test26/input.in', 'tests/test43/input.in', 'tests/test14/input.in', 'tests/test03/input.in', 'tests/test17/input.in', 'tests/test29/input.in', 'tests/test49/input.in', 'tests/test12/input.in', 'tests/test41/input.in', 'tests/test01/input.in', 'tests/test16/input.in', 'tests/test19/input.in']
+
+--- test01 ---
+🔍 DEBUG: Input: tests/test01/input.in, Output: outputs/test01.out
+🔍 DEBUG: Running validator for tests/test01/input.in
+🔍 DEBUG: Running solution for tests/test01/input.in
+🔍 DEBUG: Answer file: tests/test01/output.out
+🔍 DEBUG: Running checker: tests/test01/input.in outputs/test01.out tests/test01/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test02 ---
+🔍 DEBUG: Input: tests/test02/input.in, Output: outputs/test02.out
+🔍 DEBUG: Running validator for tests/test02/input.in
+🔍 DEBUG: Running solution for tests/test02/input.in
+🔍 DEBUG: Answer file: tests/test02/output.out
+🔍 DEBUG: Running checker: tests/test02/input.in outputs/test02.out tests/test02/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test03 ---
+🔍 DEBUG: Input: tests/test03/input.in, Output: outputs/test03.out
+🔍 DEBUG: Running validator for tests/test03/input.in
+🔍 DEBUG: Running solution for tests/test03/input.in
+🔍 DEBUG: Answer file: tests/test03/output.out
+🔍 DEBUG: Running checker: tests/test03/input.in outputs/test03.out tests/test03/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test04 ---
+🔍 DEBUG: Input: tests/test04/input.in, Output: outputs/test04.out
+🔍 DEBUG: Running validator for tests/test04/input.in
+🔍 DEBUG: Running solution for tests/test04/input.in
+🔍 DEBUG: Answer file: tests/test04/output.out
+🔍 DEBUG: Running checker: tests/test04/input.in outputs/test04.out tests/test04/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test05 ---
+🔍 DEBUG: Input: tests/test05/input.in, Output: outputs/test05.out
+🔍 DEBUG: Running validator for tests/test05/input.in
+🔍 DEBUG: Running solution for tests/test05/input.in
+🔍 DEBUG: Answer file: tests/test05/output.out
+🔍 DEBUG: Running checker: tests/test05/input.in outputs/test05.out tests/test05/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test06 ---
+🔍 DEBUG: Input: tests/test06/input.in, Output: outputs/test06.out
+🔍 DEBUG: Running validator for tests/test06/input.in
+🔍 DEBUG: Running solution for tests/test06/input.in
+🔍 DEBUG: Answer file: tests/test06/output.out
+🔍 DEBUG: Running checker: tests/test06/input.in outputs/test06.out tests/test06/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test07 ---
+🔍 DEBUG: Input: tests/test07/input.in, Output: outputs/test07.out
+🔍 DEBUG: Running validator for tests/test07/input.in
+🔍 DEBUG: Running solution for tests/test07/input.in
+🔍 DEBUG: Answer file: tests/test07/output.out
+🔍 DEBUG: Running checker: tests/test07/input.in outputs/test07.out tests/test07/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test08 ---
+🔍 DEBUG: Input: tests/test08/input.in, Output: outputs/test08.out
+🔍 DEBUG: Running validator for tests/test08/input.in
+🔍 DEBUG: Running solution for tests/test08/input.in
+🔍 DEBUG: Answer file: tests/test08/output.out
+🔍 DEBUG: Running checker: tests/test08/input.in outputs/test08.out tests/test08/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test09 ---
+🔍 DEBUG: Input: tests/test09/input.in, Output: outputs/test09.out
+🔍 DEBUG: Running validator for tests/test09/input.in
+🔍 DEBUG: Running solution for tests/test09/input.in
+🔍 DEBUG: Answer file: tests/test09/output.out
+🔍 DEBUG: Running checker: tests/test09/input.in outputs/test09.out tests/test09/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test10 ---
+🔍 DEBUG: Input: tests/test10/input.in, Output: outputs/test10.out
+🔍 DEBUG: Running validator for tests/test10/input.in
+🔍 DEBUG: Running solution for tests/test10/input.in
+🔍 DEBUG: Answer file: tests/test10/output.out
+🔍 DEBUG: Running checker: tests/test10/input.in outputs/test10.out tests/test10/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test11 ---
+🔍 DEBUG: Input: tests/test11/input.in, Output: outputs/test11.out
+🔍 DEBUG: Running validator for tests/test11/input.in
+🔍 DEBUG: Running solution for tests/test11/input.in
+🔍 DEBUG: Answer file: tests/test11/output.out
+🔍 DEBUG: Running checker: tests/test11/input.in outputs/test11.out tests/test11/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test12 ---
+🔍 DEBUG: Input: tests/test12/input.in, Output: outputs/test12.out
+🔍 DEBUG: Running validator for tests/test12/input.in
+🔍 DEBUG: Running solution for tests/test12/input.in
+🔍 DEBUG: Answer file: tests/test12/output.out
+🔍 DEBUG: Running checker: tests/test12/input.in outputs/test12.out tests/test12/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test13 ---
+🔍 DEBUG: Input: tests/test13/input.in, Output: outputs/test13.out
+🔍 DEBUG: Running validator for tests/test13/input.in
+🔍 DEBUG: Running solution for tests/test13/input.in
+🔍 DEBUG: Answer file: tests/test13/output.out
+🔍 DEBUG: Running checker: tests/test13/input.in outputs/test13.out tests/test13/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test14 ---
+🔍 DEBUG: Input: tests/test14/input.in, Output: outputs/test14.out
+🔍 DEBUG: Running validator for tests/test14/input.in
+🔍 DEBUG: Running solution for tests/test14/input.in
+🔍 DEBUG: Answer file: tests/test14/output.out
+🔍 DEBUG: Running checker: tests/test14/input.in outputs/test14.out tests/test14/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test15 ---
+🔍 DEBUG: Input: tests/test15/input.in, Output: outputs/test15.out
+🔍 DEBUG: Running validator for tests/test15/input.in
+🔍 DEBUG: Running solution for tests/test15/input.in
+🔍 DEBUG: Answer file: tests/test15/output.out
+🔍 DEBUG: Running checker: tests/test15/input.in outputs/test15.out tests/test15/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test16 ---
+🔍 DEBUG: Input: tests/test16/input.in, Output: outputs/test16.out
+🔍 DEBUG: Running validator for tests/test16/input.in
+🔍 DEBUG: Running solution for tests/test16/input.in
+🔍 DEBUG: Answer file: tests/test16/output.out
+🔍 DEBUG: Running checker: tests/test16/input.in outputs/test16.out tests/test16/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test17 ---
+🔍 DEBUG: Input: tests/test17/input.in, Output: outputs/test17.out
+🔍 DEBUG: Running validator for tests/test17/input.in
+🔍 DEBUG: Running solution for tests/test17/input.in
+🔍 DEBUG: Answer file: tests/test17/output.out
+🔍 DEBUG: Running checker: tests/test17/input.in outputs/test17.out tests/test17/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test18 ---
+🔍 DEBUG: Input: tests/test18/input.in, Output: outputs/test18.out
+🔍 DEBUG: Running validator for tests/test18/input.in
+🔍 DEBUG: Running solution for tests/test18/input.in
+🔍 DEBUG: Answer file: tests/test18/output.out
+🔍 DEBUG: Running checker: tests/test18/input.in outputs/test18.out tests/test18/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test19 ---
+🔍 DEBUG: Input: tests/test19/input.in, Output: outputs/test19.out
+🔍 DEBUG: Running validator for tests/test19/input.in
+🔍 DEBUG: Running solution for tests/test19/input.in
+🔍 DEBUG: Answer file: tests/test19/output.out
+🔍 DEBUG: Running checker: tests/test19/input.in outputs/test19.out tests/test19/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test20 ---
+🔍 DEBUG: Input: tests/test20/input.in, Output: outputs/test20.out
+🔍 DEBUG: Running validator for tests/test20/input.in
+🔍 DEBUG: Running solution for tests/test20/input.in
+🔍 DEBUG: Answer file: tests/test20/output.out
+🔍 DEBUG: Running checker: tests/test20/input.in outputs/test20.out tests/test20/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test21 ---
+🔍 DEBUG: Input: tests/test21/input.in, Output: outputs/test21.out
+🔍 DEBUG: Running validator for tests/test21/input.in
+🔍 DEBUG: Running solution for tests/test21/input.in
+🔍 DEBUG: Answer file: tests/test21/output.out
+🔍 DEBUG: Running checker: tests/test21/input.in outputs/test21.out tests/test21/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test22 ---
+🔍 DEBUG: Input: tests/test22/input.in, Output: outputs/test22.out
+🔍 DEBUG: Running validator for tests/test22/input.in
+🔍 DEBUG: Running solution for tests/test22/input.in
+🔍 DEBUG: Answer file: tests/test22/output.out
+🔍 DEBUG: Running checker: tests/test22/input.in outputs/test22.out tests/test22/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test23 ---
+🔍 DEBUG: Input: tests/test23/input.in, Output: outputs/test23.out
+🔍 DEBUG: Running validator for tests/test23/input.in
+🔍 DEBUG: Running solution for tests/test23/input.in
+🔍 DEBUG: Answer file: tests/test23/output.out
+🔍 DEBUG: Running checker: tests/test23/input.in outputs/test23.out tests/test23/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test24 ---
+🔍 DEBUG: Input: tests/test24/input.in, Output: outputs/test24.out
+🔍 DEBUG: Running validator for tests/test24/input.in
+🔍 DEBUG: Running solution for tests/test24/input.in
+🔍 DEBUG: Answer file: tests/test24/output.out
+🔍 DEBUG: Running checker: tests/test24/input.in outputs/test24.out tests/test24/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test25 ---
+🔍 DEBUG: Input: tests/test25/input.in, Output: outputs/test25.out
+🔍 DEBUG: Running validator for tests/test25/input.in
+🔍 DEBUG: Running solution for tests/test25/input.in
+🔍 DEBUG: Answer file: tests/test25/output.out
+🔍 DEBUG: Running checker: tests/test25/input.in outputs/test25.out tests/test25/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test26 ---
+🔍 DEBUG: Input: tests/test26/input.in, Output: outputs/test26.out
+🔍 DEBUG: Running validator for tests/test26/input.in
+🔍 DEBUG: Running solution for tests/test26/input.in
+🔍 DEBUG: Answer file: tests/test26/output.out
+🔍 DEBUG: Running checker: tests/test26/input.in outputs/test26.out tests/test26/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test27 ---
+🔍 DEBUG: Input: tests/test27/input.in, Output: outputs/test27.out
+🔍 DEBUG: Running validator for tests/test27/input.in
+🔍 DEBUG: Running solution for tests/test27/input.in
+🔍 DEBUG: Answer file: tests/test27/output.out
+🔍 DEBUG: Running checker: tests/test27/input.in outputs/test27.out tests/test27/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test28 ---
+🔍 DEBUG: Input: tests/test28/input.in, Output: outputs/test28.out
+🔍 DEBUG: Running validator for tests/test28/input.in
+🔍 DEBUG: Running solution for tests/test28/input.in
+🔍 DEBUG: Answer file: tests/test28/output.out
+🔍 DEBUG: Running checker: tests/test28/input.in outputs/test28.out tests/test28/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test29 ---
+🔍 DEBUG: Input: tests/test29/input.in, Output: outputs/test29.out
+🔍 DEBUG: Running validator for tests/test29/input.in
+🔍 DEBUG: Running solution for tests/test29/input.in
+🔍 DEBUG: Answer file: tests/test29/output.out
+🔍 DEBUG: Running checker: tests/test29/input.in outputs/test29.out tests/test29/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test30 ---
+🔍 DEBUG: Input: tests/test30/input.in, Output: outputs/test30.out
+🔍 DEBUG: Running validator for tests/test30/input.in
+🔍 DEBUG: Running solution for tests/test30/input.in
+🔍 DEBUG: Answer file: tests/test30/output.out
+🔍 DEBUG: Running checker: tests/test30/input.in outputs/test30.out tests/test30/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test31 ---
+🔍 DEBUG: Input: tests/test31/input.in, Output: outputs/test31.out
+🔍 DEBUG: Running validator for tests/test31/input.in
+🔍 DEBUG: Running solution for tests/test31/input.in
+🔍 DEBUG: Answer file: tests/test31/output.out
+🔍 DEBUG: Running checker: tests/test31/input.in outputs/test31.out tests/test31/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test32 ---
+🔍 DEBUG: Input: tests/test32/input.in, Output: outputs/test32.out
+🔍 DEBUG: Running validator for tests/test32/input.in
+🔍 DEBUG: Running solution for tests/test32/input.in
+🔍 DEBUG: Answer file: tests/test32/output.out
+🔍 DEBUG: Running checker: tests/test32/input.in outputs/test32.out tests/test32/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test33 ---
+🔍 DEBUG: Input: tests/test33/input.in, Output: outputs/test33.out
+🔍 DEBUG: Running validator for tests/test33/input.in
+🔍 DEBUG: Running solution for tests/test33/input.in
+🔍 DEBUG: Answer file: tests/test33/output.out
+🔍 DEBUG: Running checker: tests/test33/input.in outputs/test33.out tests/test33/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test34 ---
+🔍 DEBUG: Input: tests/test34/input.in, Output: outputs/test34.out
+🔍 DEBUG: Running validator for tests/test34/input.in
+🔍 DEBUG: Running solution for tests/test34/input.in
+🔍 DEBUG: Answer file: tests/test34/output.out
+🔍 DEBUG: Running checker: tests/test34/input.in outputs/test34.out tests/test34/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test35 ---
+🔍 DEBUG: Input: tests/test35/input.in, Output: outputs/test35.out
+🔍 DEBUG: Running validator for tests/test35/input.in
+🔍 DEBUG: Running solution for tests/test35/input.in
+🔍 DEBUG: Answer file: tests/test35/output.out
+🔍 DEBUG: Running checker: tests/test35/input.in outputs/test35.out tests/test35/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test36 ---
+🔍 DEBUG: Input: tests/test36/input.in, Output: outputs/test36.out
+🔍 DEBUG: Running validator for tests/test36/input.in
+🔍 DEBUG: Running solution for tests/test36/input.in
+🔍 DEBUG: Answer file: tests/test36/output.out
+🔍 DEBUG: Running checker: tests/test36/input.in outputs/test36.out tests/test36/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test37 ---
+🔍 DEBUG: Input: tests/test37/input.in, Output: outputs/test37.out
+🔍 DEBUG: Running validator for tests/test37/input.in
+🔍 DEBUG: Running solution for tests/test37/input.in
+🔍 DEBUG: Answer file: tests/test37/output.out
+🔍 DEBUG: Running checker: tests/test37/input.in outputs/test37.out tests/test37/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test38 ---
+🔍 DEBUG: Input: tests/test38/input.in, Output: outputs/test38.out
+🔍 DEBUG: Running validator for tests/test38/input.in
+🔍 DEBUG: Running solution for tests/test38/input.in
+🔍 DEBUG: Answer file: tests/test38/output.out
+🔍 DEBUG: Running checker: tests/test38/input.in outputs/test38.out tests/test38/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test39 ---
+🔍 DEBUG: Input: tests/test39/input.in, Output: outputs/test39.out
+🔍 DEBUG: Running validator for tests/test39/input.in
+🔍 DEBUG: Running solution for tests/test39/input.in
+🔍 DEBUG: Answer file: tests/test39/output.out
+🔍 DEBUG: Running checker: tests/test39/input.in outputs/test39.out tests/test39/output.out
+✅ OK | time=0.06s | mem=0.0MB
+
+--- test40 ---
+🔍 DEBUG: Input: tests/test40/input.in, Output: outputs/test40.out
+🔍 DEBUG: Running validator for tests/test40/input.in
+🔍 DEBUG: Running solution for tests/test40/input.in
+🔍 DEBUG: Answer file: tests/test40/output.out
+🔍 DEBUG: Running checker: tests/test40/input.in outputs/test40.out tests/test40/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test41 ---
+🔍 DEBUG: Input: tests/test41/input.in, Output: outputs/test41.out
+🔍 DEBUG: Running validator for tests/test41/input.in
+🔍 DEBUG: Running solution for tests/test41/input.in
+🔍 DEBUG: Answer file: tests/test41/output.out
+🔍 DEBUG: Running checker: tests/test41/input.in outputs/test41.out tests/test41/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test42 ---
+🔍 DEBUG: Input: tests/test42/input.in, Output: outputs/test42.out
+🔍 DEBUG: Running validator for tests/test42/input.in
+🔍 DEBUG: Running solution for tests/test42/input.in
+🔍 DEBUG: Answer file: tests/test42/output.out
+🔍 DEBUG: Running checker: tests/test42/input.in outputs/test42.out tests/test42/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test43 ---
+🔍 DEBUG: Input: tests/test43/input.in, Output: outputs/test43.out
+🔍 DEBUG: Running validator for tests/test43/input.in
+🔍 DEBUG: Running solution for tests/test43/input.in
+🔍 DEBUG: Answer file: tests/test43/output.out
+🔍 DEBUG: Running checker: tests/test43/input.in outputs/test43.out tests/test43/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test44 ---
+🔍 DEBUG: Input: tests/test44/input.in, Output: outputs/test44.out
+🔍 DEBUG: Running validator for tests/test44/input.in
+🔍 DEBUG: Running solution for tests/test44/input.in
+🔍 DEBUG: Answer file: tests/test44/output.out
+🔍 DEBUG: Running checker: tests/test44/input.in outputs/test44.out tests/test44/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test45 ---
+🔍 DEBUG: Input: tests/test45/input.in, Output: outputs/test45.out
+🔍 DEBUG: Running validator for tests/test45/input.in
+🔍 DEBUG: Running solution for tests/test45/input.in
+🔍 DEBUG: Answer file: tests/test45/output.out
+🔍 DEBUG: Running checker: tests/test45/input.in outputs/test45.out tests/test45/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test46 ---
+🔍 DEBUG: Input: tests/test46/input.in, Output: outputs/test46.out
+🔍 DEBUG: Running validator for tests/test46/input.in
+🔍 DEBUG: Running solution for tests/test46/input.in
+🔍 DEBUG: Answer file: tests/test46/output.out
+🔍 DEBUG: Running checker: tests/test46/input.in outputs/test46.out tests/test46/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test47 ---
+🔍 DEBUG: Input: tests/test47/input.in, Output: outputs/test47.out
+🔍 DEBUG: Running validator for tests/test47/input.in
+🔍 DEBUG: Running solution for tests/test47/input.in
+🔍 DEBUG: Answer file: tests/test47/output.out
+🔍 DEBUG: Running checker: tests/test47/input.in outputs/test47.out tests/test47/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test48 ---
+🔍 DEBUG: Input: tests/test48/input.in, Output: outputs/test48.out
+🔍 DEBUG: Running validator for tests/test48/input.in
+🔍 DEBUG: Running solution for tests/test48/input.in
+🔍 DEBUG: Answer file: tests/test48/output.out
+🔍 DEBUG: Running checker: tests/test48/input.in outputs/test48.out tests/test48/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test49 ---
+🔍 DEBUG: Input: tests/test49/input.in, Output: outputs/test49.out
+🔍 DEBUG: Running validator for tests/test49/input.in
+🔍 DEBUG: Running solution for tests/test49/input.in
+🔍 DEBUG: Answer file: tests/test49/output.out
+🔍 DEBUG: Running checker: tests/test49/input.in outputs/test49.out tests/test49/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+--- test50 ---
+🔍 DEBUG: Input: tests/test50/input.in, Output: outputs/test50.out
+🔍 DEBUG: Running validator for tests/test50/input.in
+🔍 DEBUG: Running solution for tests/test50/input.in
+🔍 DEBUG: Answer file: tests/test50/output.out
+🔍 DEBUG: Running checker: tests/test50/input.in outputs/test50.out tests/test50/output.out
+✅ OK | time=0.05s | mem=0.0MB
+
+==================== Summary ====================
+Tổng số test : 50
+✅ Passed     : 50
+❌ Failed     : 0
+=================================================
+🎯 Tỉ lệ đúng : 100.00%
+=================================================
+
+==================================================
+STDERR:
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correctly answered -1
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correctly answered -1
+ok Correct Hamiltonian path
+ok Correctly answered -1
+ok Correctly answered -1
+ok Correct Hamiltonian path
+ok Correctly answered -1
+ok Correctly answered -1
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correctly answered -1
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
+ok Correct Hamiltonian path
