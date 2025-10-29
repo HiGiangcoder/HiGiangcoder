@@ -1,0 +1,2378 @@
+{
+  "team01": {
+    "b1": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 31,
+          "total": 50,
+          "score": 0.62,
+          "execution_time": 4.062094449996948,
+          "log_file": "logs/team01_b1_solution_bai_1_bug_ver_3.log",
+          "solution_name": "solution_bai_1_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 28,
+          "total": 50,
+          "score": 0.56,
+          "execution_time": 27.745128631591797,
+          "log_file": "logs/team01_b1_solution_bai_1_bug_ver_2.log",
+          "solution_name": "solution_bai_1_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 4.492336988449097,
+          "log_file": "logs/team01_b1_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 4.19273567199707,
+          "log_file": "logs/team01_b1_solution_bai_1_bug_ver_1.log",
+          "solution_name": "solution_bai_1_bug_ver_1"
+        }
+      ],
+      "total_score": 9.505795913942475,
+      "solution_score": 4,
+      "bug_score": 1.505795913942474,
+      "q": 3,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b2": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 21.179534435272217,
+          "log_file": "logs/team01_b2_solution_bai_2_bug_ver_3.log",
+          "solution_name": "solution_bai_2_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 39,
+          "total": 100,
+          "score": 0.39,
+          "execution_time": 18.96068000793457,
+          "log_file": "logs/team01_b2_solution_bai_2_bug_ver_1.log",
+          "solution_name": "solution_bai_2_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 20.739941120147705,
+          "log_file": "logs/team01_b2_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 91,
+          "total": 100,
+          "score": 0.91,
+          "execution_time": 19.791744232177734,
+          "log_file": "logs/team01_b2_solution_bai_2_bug_ver_2.log",
+          "solution_name": "solution_bai_2_bug_ver_2"
+        }
+      ],
+      "total_score": 9.505795913942475,
+      "solution_score": 4,
+      "bug_score": 1.505795913942474,
+      "q": 3,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b3": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 65,
+          "total": 100,
+          "score": 0.65,
+          "execution_time": 6.703031778335571,
+          "log_file": "logs/team01_b3_solution_bai_3_bug_ver_2.log",
+          "solution_name": "solution_bai_3_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 40,
+          "total": 100,
+          "score": 0.4,
+          "execution_time": 6.551786422729492,
+          "log_file": "logs/team01_b3_solution_bai_3_bug_ver_1.log",
+          "solution_name": "solution_bai_3_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 7.381312370300293,
+          "log_file": "logs/team01_b3_solution.log",
+          "solution_name": "solution"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 2,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 3,
+      "completed_solutions": 3
+    }
+  },
+  "team02": {
+    "b1": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "missing",
+          "message": "Team team02 không tồn tại"
+        },
+        {
+          "status": "missing",
+          "message": "Team team02 không tồn tại"
+        },
+        {
+          "status": "missing",
+          "message": "Team team02 không tồn tại"
+        },
+        {
+          "status": "missing",
+          "message": "Team team02 không tồn tại"
+        }
+      ],
+      "total_score": 6.0,
+      "solution_score": 0,
+      "bug_score": 2.0,
+      "q": 4,
+      "p": 4,
+      "has_solution": false,
+      "solution_passed": false,
+      "total_solutions": 4,
+      "completed_solutions": 0
+    },
+    "b2": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "missing",
+          "message": "Team team02 không tồn tại"
+        },
+        {
+          "status": "missing",
+          "message": "Team team02 không tồn tại"
+        },
+        {
+          "status": "missing",
+          "message": "Team team02 không tồn tại"
+        },
+        {
+          "status": "missing",
+          "message": "Team team02 không tồn tại"
+        }
+      ],
+      "total_score": 6.0,
+      "solution_score": 0,
+      "bug_score": 2.0,
+      "q": 4,
+      "p": 4,
+      "has_solution": false,
+      "solution_passed": false,
+      "total_solutions": 4,
+      "completed_solutions": 0
+    },
+    "b3": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "missing",
+          "message": "Team team02 không tồn tại"
+        },
+        {
+          "status": "missing",
+          "message": "Team team02 không tồn tại"
+        },
+        {
+          "status": "missing",
+          "message": "Team team02 không tồn tại"
+        }
+      ],
+      "total_score": 6.0,
+      "solution_score": 0,
+      "bug_score": 2.0,
+      "q": 3,
+      "p": 3,
+      "has_solution": false,
+      "solution_passed": false,
+      "total_solutions": 3,
+      "completed_solutions": 0
+    }
+  },
+  "team03": {
+    "b1": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 38,
+          "total": 79,
+          "score": 0.4810126582278481,
+          "execution_time": 6.760868787765503,
+          "log_file": "logs/team03_b1_solution_bai_1_bug_ver_3.log",
+          "solution_name": "solution_bai_1_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 43,
+          "total": 79,
+          "score": 0.5443037974683544,
+          "execution_time": 44.52857947349548,
+          "log_file": "logs/team03_b1_solution_bai_1_bug_ver_2.log",
+          "solution_name": "solution_bai_1_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 79,
+          "total": 79,
+          "score": 1.0,
+          "execution_time": 6.89573073387146,
+          "log_file": "logs/team03_b1_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 61,
+          "total": 79,
+          "score": 0.7721518987341772,
+          "execution_time": 6.4812095165252686,
+          "log_file": "logs/team03_b1_solution_bai_1_bug_ver_1.log",
+          "solution_name": "solution_bai_1_bug_ver_1"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 3,
+      "p": 3,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b2": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 51,
+          "total": 51,
+          "score": 1.0,
+          "execution_time": 7.671782970428467,
+          "log_file": "logs/team03_b2_solution_bai_2_bug_ver_3.log",
+          "solution_name": "solution_bai_2_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 37,
+          "total": 51,
+          "score": 0.7254901960784313,
+          "execution_time": 7.250037908554077,
+          "log_file": "logs/team03_b2_solution_bai_2_bug_ver_1.log",
+          "solution_name": "solution_bai_2_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 51,
+          "total": 51,
+          "score": 1.0,
+          "execution_time": 8.670443296432495,
+          "log_file": "logs/team03_b2_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 39,
+          "total": 51,
+          "score": 0.7647058823529411,
+          "execution_time": 8.013320922851562,
+          "log_file": "logs/team03_b2_solution_bai_2_bug_ver_2.log",
+          "solution_name": "solution_bai_2_bug_ver_2"
+        }
+      ],
+      "total_score": 9.505795913942475,
+      "solution_score": 4,
+      "bug_score": 1.505795913942474,
+      "q": 3,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b3": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 24,
+          "total": 50,
+          "score": 0.48,
+          "execution_time": 3.73722767829895,
+          "log_file": "logs/team03_b3_solution_bai_3_bug_ver_2.log",
+          "solution_name": "solution_bai_3_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 38,
+          "total": 50,
+          "score": 0.76,
+          "execution_time": 3.683854818344116,
+          "log_file": "logs/team03_b3_solution_bai_3_bug_ver_1.log",
+          "solution_name": "solution_bai_3_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 4.165210723876953,
+          "log_file": "logs/team03_b3_solution.log",
+          "solution_name": "solution"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 2,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 3,
+      "completed_solutions": 3
+    }
+  },
+  "team04": {
+    "b1": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 55,
+          "total": 100,
+          "score": 0.55,
+          "execution_time": 8.279217720031738,
+          "log_file": "logs/team04_b1_solution_bai_1_bug_ver_3.log",
+          "solution_name": "solution_bai_1_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 53,
+          "total": 100,
+          "score": 0.53,
+          "execution_time": 58.20379614830017,
+          "log_file": "logs/team04_b1_solution_bai_1_bug_ver_2.log",
+          "solution_name": "solution_bai_1_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 8.375779151916504,
+          "log_file": "logs/team04_b1_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 74,
+          "total": 100,
+          "score": 0.74,
+          "execution_time": 8.132181882858276,
+          "log_file": "logs/team04_b1_solution_bai_1_bug_ver_1.log",
+          "solution_name": "solution_bai_1_bug_ver_1"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 3,
+      "p": 3,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b2": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 98,
+          "total": 100,
+          "score": 0.98,
+          "execution_time": 22.389248847961426,
+          "log_file": "logs/team04_b2_solution_bai_2_bug_ver_3.log",
+          "solution_name": "solution_bai_2_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 90,
+          "total": 100,
+          "score": 0.9,
+          "execution_time": 13.767045021057129,
+          "log_file": "logs/team04_b2_solution_bai_2_bug_ver_1.log",
+          "solution_name": "solution_bai_2_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 14.562795162200928,
+          "log_file": "logs/team04_b2_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 95,
+          "total": 100,
+          "score": 0.95,
+          "execution_time": 13.708373546600342,
+          "log_file": "logs/team04_b2_solution_bai_2_bug_ver_2.log",
+          "solution_name": "solution_bai_2_bug_ver_2"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 3,
+      "p": 3,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b3": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 48,
+          "total": 100,
+          "score": 0.48,
+          "execution_time": 6.821448087692261,
+          "log_file": "logs/team04_b3_solution_bai_3_bug_ver_2.log",
+          "solution_name": "solution_bai_3_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 70,
+          "total": 100,
+          "score": 0.7,
+          "execution_time": 6.886116027832031,
+          "log_file": "logs/team04_b3_solution_bai_3_bug_ver_1.log",
+          "solution_name": "solution_bai_3_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 7.211327314376831,
+          "log_file": "logs/team04_b3_solution.log",
+          "solution_name": "solution"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 2,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 3,
+      "completed_solutions": 3
+    }
+  },
+  "team05": {
+    "b1": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 31,
+          "total": 100,
+          "score": 0.31,
+          "execution_time": 7.941495656967163,
+          "log_file": "logs/team05_b1_solution_bai_1_bug_ver_3.log",
+          "solution_name": "solution_bai_1_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 42,
+          "total": 100,
+          "score": 0.42,
+          "execution_time": 69.13546800613403,
+          "log_file": "logs/team05_b1_solution_bai_1_bug_ver_2.log",
+          "solution_name": "solution_bai_1_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 8.561084985733032,
+          "log_file": "logs/team05_b1_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 63,
+          "total": 100,
+          "score": 0.63,
+          "execution_time": 8.228836297988892,
+          "log_file": "logs/team05_b1_solution_bai_1_bug_ver_1.log",
+          "solution_name": "solution_bai_1_bug_ver_1"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 3,
+      "p": 3,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b2": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 11.961928844451904,
+          "log_file": "logs/team05_b2_solution_bai_2_bug_ver_3.log",
+          "solution_name": "solution_bai_2_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 39,
+          "total": 100,
+          "score": 0.39,
+          "execution_time": 12.04790472984314,
+          "log_file": "logs/team05_b2_solution_bai_2_bug_ver_1.log",
+          "solution_name": "solution_bai_2_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 12.286865234375,
+          "log_file": "logs/team05_b2_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 91,
+          "total": 100,
+          "score": 0.91,
+          "execution_time": 12.197964906692505,
+          "log_file": "logs/team05_b2_solution_bai_2_bug_ver_2.log",
+          "solution_name": "solution_bai_2_bug_ver_2"
+        }
+      ],
+      "total_score": 9.505795913942475,
+      "solution_score": 4,
+      "bug_score": 1.505795913942474,
+      "q": 3,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b3": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 61,
+          "total": 100,
+          "score": 0.61,
+          "execution_time": 6.857870578765869,
+          "log_file": "logs/team05_b3_solution_bai_3_bug_ver_2.log",
+          "solution_name": "solution_bai_3_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 75,
+          "total": 100,
+          "score": 0.75,
+          "execution_time": 6.732554197311401,
+          "log_file": "logs/team05_b3_solution_bai_3_bug_ver_1.log",
+          "solution_name": "solution_bai_3_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 6.969553470611572,
+          "log_file": "logs/team05_b3_solution.log",
+          "solution_name": "solution"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 2,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 3,
+      "completed_solutions": 3
+    }
+  },
+  "team06": {
+    "b1": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 31,
+          "total": 50,
+          "score": 0.62,
+          "execution_time": 4.137481689453125,
+          "log_file": "logs/team06_b1_solution_bai_1_bug_ver_3.log",
+          "solution_name": "solution_bai_1_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 28,
+          "total": 50,
+          "score": 0.56,
+          "execution_time": 27.225370168685913,
+          "log_file": "logs/team06_b1_solution_bai_1_bug_ver_2.log",
+          "solution_name": "solution_bai_1_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 4.520068645477295,
+          "log_file": "logs/team06_b1_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 4.091315031051636,
+          "log_file": "logs/team06_b1_solution_bai_1_bug_ver_1.log",
+          "solution_name": "solution_bai_1_bug_ver_1"
+        }
+      ],
+      "total_score": 9.505795913942475,
+      "solution_score": 4,
+      "bug_score": 1.505795913942474,
+      "q": 3,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b2": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 19.688800811767578,
+          "log_file": "logs/team06_b2_solution_bai_2_bug_ver_3.log",
+          "solution_name": "solution_bai_2_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 39,
+          "total": 100,
+          "score": 0.39,
+          "execution_time": 19.11563777923584,
+          "log_file": "logs/team06_b2_solution_bai_2_bug_ver_1.log",
+          "solution_name": "solution_bai_2_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 20.398351907730103,
+          "log_file": "logs/team06_b2_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 91,
+          "total": 100,
+          "score": 0.91,
+          "execution_time": 19.443005561828613,
+          "log_file": "logs/team06_b2_solution_bai_2_bug_ver_2.log",
+          "solution_name": "solution_bai_2_bug_ver_2"
+        }
+      ],
+      "total_score": 9.505795913942475,
+      "solution_score": 4,
+      "bug_score": 1.505795913942474,
+      "q": 3,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b3": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 65,
+          "total": 100,
+          "score": 0.65,
+          "execution_time": 6.752508640289307,
+          "log_file": "logs/team06_b3_solution_bai_3_bug_ver_2.log",
+          "solution_name": "solution_bai_3_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 40,
+          "total": 100,
+          "score": 0.4,
+          "execution_time": 6.696906805038452,
+          "log_file": "logs/team06_b3_solution_bai_3_bug_ver_1.log",
+          "solution_name": "solution_bai_3_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 7.0443010330200195,
+          "log_file": "logs/team06_b3_solution.log",
+          "solution_name": "solution"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 2,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 3,
+      "completed_solutions": 3
+    }
+  },
+  "team07": {
+    "b1": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 23,
+          "total": 50,
+          "score": 0.46,
+          "execution_time": 3.9597935676574707,
+          "log_file": "logs/team07_b1_solution_bai_1_bug_ver_3.log",
+          "solution_name": "solution_bai_1_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 23,
+          "total": 50,
+          "score": 0.46,
+          "execution_time": 32.49180722236633,
+          "log_file": "logs/team07_b1_solution_bai_1_bug_ver_2.log",
+          "solution_name": "solution_bai_1_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 4.400273561477661,
+          "log_file": "logs/team07_b1_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 40,
+          "total": 50,
+          "score": 0.8,
+          "execution_time": 3.896451234817505,
+          "log_file": "logs/team07_b1_solution_bai_1_bug_ver_1.log",
+          "solution_name": "solution_bai_1_bug_ver_1"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 3,
+      "p": 3,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b2": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 13.176612377166748,
+          "log_file": "logs/team07_b2_solution_bai_2_bug_ver_3.log",
+          "solution_name": "solution_bai_2_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 62,
+          "total": 100,
+          "score": 0.62,
+          "execution_time": 12.749797582626343,
+          "log_file": "logs/team07_b2_solution_bai_2_bug_ver_1.log",
+          "solution_name": "solution_bai_2_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 13.081631660461426,
+          "log_file": "logs/team07_b2_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 68,
+          "total": 100,
+          "score": 0.68,
+          "execution_time": 12.769229888916016,
+          "log_file": "logs/team07_b2_solution_bai_2_bug_ver_2.log",
+          "solution_name": "solution_bai_2_bug_ver_2"
+        }
+      ],
+      "total_score": 9.505795913942475,
+      "solution_score": 4,
+      "bug_score": 1.505795913942474,
+      "q": 3,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b3": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 65,
+          "total": 100,
+          "score": 0.65,
+          "execution_time": 6.742386102676392,
+          "log_file": "logs/team07_b3_solution_bai_3_bug_ver_2.log",
+          "solution_name": "solution_bai_3_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 66,
+          "total": 100,
+          "score": 0.66,
+          "execution_time": 6.778986215591431,
+          "log_file": "logs/team07_b3_solution_bai_3_bug_ver_1.log",
+          "solution_name": "solution_bai_3_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 6.949829816818237,
+          "log_file": "logs/team07_b3_solution.log",
+          "solution_name": "solution"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 2,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 3,
+      "completed_solutions": 3
+    }
+  },
+  "team08": {
+    "b1": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 30,
+          "total": 50,
+          "score": 0.6,
+          "execution_time": 4.384216070175171,
+          "log_file": "logs/team08_b1_solution_bai_1_bug_ver_3.log",
+          "solution_name": "solution_bai_1_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 20,
+          "total": 50,
+          "score": 0.4,
+          "execution_time": 35.76846432685852,
+          "log_file": "logs/team08_b1_solution_bai_1_bug_ver_2.log",
+          "solution_name": "solution_bai_1_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 4.789613485336304,
+          "log_file": "logs/team08_b1_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 43,
+          "total": 50,
+          "score": 0.86,
+          "execution_time": 4.318312406539917,
+          "log_file": "logs/team08_b1_solution_bai_1_bug_ver_1.log",
+          "solution_name": "solution_bai_1_bug_ver_1"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 3,
+      "p": 3,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b2": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 0,
+          "total": 100,
+          "score": 0.0,
+          "execution_time": 14.577300310134888,
+          "log_file": "logs/team08_b2_solution_bai_2_bug_ver_3.log",
+          "solution_name": "solution_bai_2_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 0,
+          "total": 100,
+          "score": 0.0,
+          "execution_time": 14.656593561172485,
+          "log_file": "logs/team08_b2_solution_bai_2_bug_ver_1.log",
+          "solution_name": "solution_bai_2_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 0,
+          "total": 100,
+          "score": 0.0,
+          "execution_time": 16.038201332092285,
+          "log_file": "logs/team08_b2_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 0,
+          "total": 100,
+          "score": 0.0,
+          "execution_time": 16.03861951828003,
+          "log_file": "logs/team08_b2_solution_bai_2_bug_ver_2.log",
+          "solution_name": "solution_bai_2_bug_ver_2"
+        }
+      ],
+      "total_score": 6.0,
+      "solution_score": 0,
+      "bug_score": 2.0,
+      "q": 3,
+      "p": 3,
+      "has_solution": true,
+      "solution_passed": false,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b3": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 17,
+          "total": 50,
+          "score": 0.34,
+          "execution_time": 3.701122760772705,
+          "log_file": "logs/team08_b3_solution_bai_3_bug_ver_2.log",
+          "solution_name": "solution_bai_3_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 43,
+          "total": 50,
+          "score": 0.86,
+          "execution_time": 3.5530855655670166,
+          "log_file": "logs/team08_b3_solution_bai_3_bug_ver_1.log",
+          "solution_name": "solution_bai_3_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 3.907731533050537,
+          "log_file": "logs/team08_b3_solution.log",
+          "solution_name": "solution"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 2,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 3,
+      "completed_solutions": 3
+    }
+  },
+  "team09": {
+    "b1": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 21,
+          "total": 50,
+          "score": 0.42,
+          "execution_time": 3.880664587020874,
+          "log_file": "logs/team09_b1_solution_bai_1_bug_ver_3.log",
+          "solution_name": "solution_bai_1_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 30,
+          "total": 50,
+          "score": 0.6,
+          "execution_time": 25.12660789489746,
+          "log_file": "logs/team09_b1_solution_bai_1_bug_ver_2.log",
+          "solution_name": "solution_bai_1_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 4.376534700393677,
+          "log_file": "logs/team09_b1_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 42,
+          "total": 50,
+          "score": 0.84,
+          "execution_time": 4.0327136516571045,
+          "log_file": "logs/team09_b1_solution_bai_1_bug_ver_1.log",
+          "solution_name": "solution_bai_1_bug_ver_1"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 3,
+      "p": 3,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b2": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 6.979085445404053,
+          "log_file": "logs/team09_b2_solution_bai_2_bug_ver_3.log",
+          "solution_name": "solution_bai_2_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 7.029723644256592,
+          "log_file": "logs/team09_b2_solution_bai_2_bug_ver_1.log",
+          "solution_name": "solution_bai_2_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 7.270155429840088,
+          "log_file": "logs/team09_b2_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 43,
+          "total": 50,
+          "score": 0.86,
+          "execution_time": 7.144400358200073,
+          "log_file": "logs/team09_b2_solution_bai_2_bug_ver_2.log",
+          "solution_name": "solution_bai_2_bug_ver_2"
+        }
+      ],
+      "total_score": 8.92692611354394,
+      "solution_score": 4,
+      "bug_score": 0.9269261135439396,
+      "q": 3,
+      "p": 1,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b3": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 59,
+          "total": 100,
+          "score": 0.59,
+          "execution_time": 6.6051344871521,
+          "log_file": "logs/team09_b3_solution_bai_3_bug_ver_2.log",
+          "solution_name": "solution_bai_3_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 64,
+          "total": 100,
+          "score": 0.64,
+          "execution_time": 6.745890378952026,
+          "log_file": "logs/team09_b3_solution_bai_3_bug_ver_1.log",
+          "solution_name": "solution_bai_3_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 7.114546298980713,
+          "log_file": "logs/team09_b3_solution.log",
+          "solution_name": "solution"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 2,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 3,
+      "completed_solutions": 3
+    }
+  },
+  "team10": {
+    "b1": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 23,
+          "total": 50,
+          "score": 0.46,
+          "execution_time": 4.293745279312134,
+          "log_file": "logs/team10_b1_solution_bai_1_bug_ver_3.log",
+          "solution_name": "solution_bai_1_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 20,
+          "total": 50,
+          "score": 0.4,
+          "execution_time": 35.925344944000244,
+          "log_file": "logs/team10_b1_solution_bai_1_bug_ver_2.log",
+          "solution_name": "solution_bai_1_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 4.4914586544036865,
+          "log_file": "logs/team10_b1_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 42,
+          "total": 50,
+          "score": 0.84,
+          "execution_time": 4.25529670715332,
+          "log_file": "logs/team10_b1_solution_bai_1_bug_ver_1.log",
+          "solution_name": "solution_bai_1_bug_ver_1"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 3,
+      "p": 3,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b2": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 15,
+          "total": 50,
+          "score": 0.3,
+          "execution_time": 5.895937919616699,
+          "log_file": "logs/team10_b2_solution_bai_2_bug_ver_3.log",
+          "solution_name": "solution_bai_2_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 14,
+          "total": 50,
+          "score": 0.28,
+          "execution_time": 6.1220479011535645,
+          "log_file": "logs/team10_b2_solution_bai_2_bug_ver_1.log",
+          "solution_name": "solution_bai_2_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 15,
+          "total": 50,
+          "score": 0.3,
+          "execution_time": 6.202504873275757,
+          "log_file": "logs/team10_b2_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 14,
+          "total": 50,
+          "score": 0.28,
+          "execution_time": 5.880523920059204,
+          "log_file": "logs/team10_b2_solution_bai_2_bug_ver_2.log",
+          "solution_name": "solution_bai_2_bug_ver_2"
+        }
+      ],
+      "total_score": 6.0,
+      "solution_score": 0,
+      "bug_score": 2.0,
+      "q": 3,
+      "p": 3,
+      "has_solution": true,
+      "solution_passed": false,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b3": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 17,
+          "total": 50,
+          "score": 0.34,
+          "execution_time": 3.6725471019744873,
+          "log_file": "logs/team10_b3_solution_bai_3_bug_ver_2.log",
+          "solution_name": "solution_bai_3_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 43,
+          "total": 50,
+          "score": 0.86,
+          "execution_time": 3.6236770153045654,
+          "log_file": "logs/team10_b3_solution_bai_3_bug_ver_1.log",
+          "solution_name": "solution_bai_3_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 3.9800403118133545,
+          "log_file": "logs/team10_b3_solution.log",
+          "solution_name": "solution"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 2,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 3,
+      "completed_solutions": 3
+    }
+  },
+  "team11": {
+    "b1": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 43,
+          "total": 100,
+          "score": 0.43,
+          "execution_time": 7.710363388061523,
+          "log_file": "logs/team11_b1_solution_bai_1_bug_ver_3.log",
+          "solution_name": "solution_bai_1_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 30,
+          "total": 100,
+          "score": 0.3,
+          "execution_time": 82.18298959732056,
+          "log_file": "logs/team11_b1_solution_bai_1_bug_ver_2.log",
+          "solution_name": "solution_bai_1_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 8.497234106063843,
+          "log_file": "logs/team11_b1_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 8.054609775543213,
+          "log_file": "logs/team11_b1_solution_bai_1_bug_ver_1.log",
+          "solution_name": "solution_bai_1_bug_ver_1"
+        }
+      ],
+      "total_score": 9.505795913942475,
+      "solution_score": 4,
+      "bug_score": 1.505795913942474,
+      "q": 3,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b2": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 3.7771213054656982,
+          "log_file": "logs/team11_b2_solution_bai_2_bug_ver_3.log",
+          "solution_name": "solution_bai_2_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 34,
+          "total": 50,
+          "score": 0.68,
+          "execution_time": 3.8074934482574463,
+          "log_file": "logs/team11_b2_solution_bai_2_bug_ver_1.log",
+          "solution_name": "solution_bai_2_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 4.099740028381348,
+          "log_file": "logs/team11_b2_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 30,
+          "total": 50,
+          "score": 0.6,
+          "execution_time": 3.7648861408233643,
+          "log_file": "logs/team11_b2_solution_bai_2_bug_ver_2.log",
+          "solution_name": "solution_bai_2_bug_ver_2"
+        }
+      ],
+      "total_score": 9.505795913942475,
+      "solution_score": 4,
+      "bug_score": 1.505795913942474,
+      "q": 3,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b3": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 20,
+          "total": 50,
+          "score": 0.4,
+          "execution_time": 3.7091431617736816,
+          "log_file": "logs/team11_b3_solution_bai_3_bug_ver_2.log",
+          "solution_name": "solution_bai_3_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 38,
+          "total": 50,
+          "score": 0.76,
+          "execution_time": 3.5230965614318848,
+          "log_file": "logs/team11_b3_solution_bai_3_bug_ver_1.log",
+          "solution_name": "solution_bai_3_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 3.9098758697509766,
+          "log_file": "logs/team11_b3_solution.log",
+          "solution_name": "solution"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 2,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 3,
+      "completed_solutions": 3
+    }
+  },
+  "team12": {
+    "b1": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 56,
+          "total": 100,
+          "score": 0.56,
+          "execution_time": 7.124639987945557,
+          "log_file": "logs/team12_b1_solution_bai_1_bug_ver_3.log",
+          "solution_name": "solution_bai_1_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 55,
+          "total": 100,
+          "score": 0.55,
+          "execution_time": 55.27393627166748,
+          "log_file": "logs/team12_b1_solution_bai_1_bug_ver_2.log",
+          "solution_name": "solution_bai_1_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 8.06853985786438,
+          "log_file": "logs/team12_b1_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 83,
+          "total": 100,
+          "score": 0.83,
+          "execution_time": 7.559961318969727,
+          "log_file": "logs/team12_b1_solution_bai_1_bug_ver_1.log",
+          "solution_name": "solution_bai_1_bug_ver_1"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 3,
+      "p": 3,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b2": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 95,
+          "total": 95,
+          "score": 1.0,
+          "execution_time": 15.157530784606934,
+          "log_file": "logs/team12_b2_solution_bai_2_bug_ver_3.log",
+          "solution_name": "solution_bai_2_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 72,
+          "total": 95,
+          "score": 0.7578947368421053,
+          "execution_time": 14.546452760696411,
+          "log_file": "logs/team12_b2_solution_bai_2_bug_ver_1.log",
+          "solution_name": "solution_bai_2_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 95,
+          "total": 95,
+          "score": 1.0,
+          "execution_time": 15.92098879814148,
+          "log_file": "logs/team12_b2_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 61,
+          "total": 95,
+          "score": 0.6421052631578947,
+          "execution_time": 14.198947668075562,
+          "log_file": "logs/team12_b2_solution_bai_2_bug_ver_2.log",
+          "solution_name": "solution_bai_2_bug_ver_2"
+        }
+      ],
+      "total_score": 9.505795913942475,
+      "solution_score": 4,
+      "bug_score": 1.505795913942474,
+      "q": 3,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b3": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 47,
+          "total": 90,
+          "score": 0.5222222222222223,
+          "execution_time": 6.222758054733276,
+          "log_file": "logs/team12_b3_solution_bai_3_bug_ver_2.log",
+          "solution_name": "solution_bai_3_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 70,
+          "total": 90,
+          "score": 0.7777777777777778,
+          "execution_time": 6.1373701095581055,
+          "log_file": "logs/team12_b3_solution_bai_3_bug_ver_1.log",
+          "solution_name": "solution_bai_3_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 90,
+          "total": 90,
+          "score": 1.0,
+          "execution_time": 6.475939035415649,
+          "log_file": "logs/team12_b3_solution.log",
+          "solution_name": "solution"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 2,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 3,
+      "completed_solutions": 3
+    }
+  },
+  "team13": {
+    "b1": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 56,
+          "total": 100,
+          "score": 0.56,
+          "execution_time": 7.701441764831543,
+          "log_file": "logs/team13_b1_solution_bai_1_bug_ver_3.log",
+          "solution_name": "solution_bai_1_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 30,
+          "total": 100,
+          "score": 0.3,
+          "execution_time": 81.84346342086792,
+          "log_file": "logs/team13_b1_solution_bai_1_bug_ver_2.log",
+          "solution_name": "solution_bai_1_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 7.970160245895386,
+          "log_file": "logs/team13_b1_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 80,
+          "total": 100,
+          "score": 0.8,
+          "execution_time": 7.6308417320251465,
+          "log_file": "logs/team13_b1_solution_bai_1_bug_ver_1.log",
+          "solution_name": "solution_bai_1_bug_ver_1"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 3,
+      "p": 3,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b2": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 6.941608905792236,
+          "log_file": "logs/team13_b2_solution_bai_2_bug_ver_3.log",
+          "solution_name": "solution_bai_2_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 83,
+          "total": 100,
+          "score": 0.83,
+          "execution_time": 7.149981498718262,
+          "log_file": "logs/team13_b2_solution_bai_2_bug_ver_1.log",
+          "solution_name": "solution_bai_2_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 7.3338446617126465,
+          "log_file": "logs/team13_b2_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 90,
+          "total": 100,
+          "score": 0.9,
+          "execution_time": 7.0563342571258545,
+          "log_file": "logs/team13_b2_solution_bai_2_bug_ver_2.log",
+          "solution_name": "solution_bai_2_bug_ver_2"
+        }
+      ],
+      "total_score": 9.505795913942475,
+      "solution_score": 4,
+      "bug_score": 1.505795913942474,
+      "q": 3,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b3": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 62,
+          "total": 100,
+          "score": 0.62,
+          "execution_time": 6.912917137145996,
+          "log_file": "logs/team13_b3_solution_bai_3_bug_ver_2.log",
+          "solution_name": "solution_bai_3_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 63,
+          "total": 100,
+          "score": 0.63,
+          "execution_time": 6.589355230331421,
+          "log_file": "logs/team13_b3_solution_bai_3_bug_ver_1.log",
+          "solution_name": "solution_bai_3_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 6.8366477489471436,
+          "log_file": "logs/team13_b3_solution.log",
+          "solution_name": "solution"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 2,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 3,
+      "completed_solutions": 3
+    }
+  },
+  "team14": {
+    "b1": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 24,
+          "total": 50,
+          "score": 0.48,
+          "execution_time": 4.0916383266448975,
+          "log_file": "logs/team14_b1_solution_bai_1_bug_ver_3.log",
+          "solution_name": "solution_bai_1_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 28,
+          "total": 50,
+          "score": 0.56,
+          "execution_time": 27.197072505950928,
+          "log_file": "logs/team14_b1_solution_bai_1_bug_ver_2.log",
+          "solution_name": "solution_bai_1_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 4.588274717330933,
+          "log_file": "logs/team14_b1_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 49,
+          "total": 50,
+          "score": 0.98,
+          "execution_time": 4.2334020137786865,
+          "log_file": "logs/team14_b1_solution_bai_1_bug_ver_1.log",
+          "solution_name": "solution_bai_1_bug_ver_1"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 3,
+      "p": 3,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b2": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 72,
+          "total": 100,
+          "score": 0.72,
+          "execution_time": 87.37606048583984,
+          "log_file": "logs/team14_b2_solution_bai_2_bug_ver_3.log",
+          "solution_name": "solution_bai_2_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 88,
+          "total": 100,
+          "score": 0.88,
+          "execution_time": 11.083863258361816,
+          "log_file": "logs/team14_b2_solution_bai_2_bug_ver_1.log",
+          "solution_name": "solution_bai_2_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 11.402542114257812,
+          "log_file": "logs/team14_b2_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 67,
+          "total": 100,
+          "score": 0.67,
+          "execution_time": 11.017061233520508,
+          "log_file": "logs/team14_b2_solution_bai_2_bug_ver_2.log",
+          "solution_name": "solution_bai_2_bug_ver_2"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 3,
+      "p": 3,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b3": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 47,
+          "total": 100,
+          "score": 0.47,
+          "execution_time": 6.7992634773254395,
+          "log_file": "logs/team14_b3_solution_bai_3_bug_ver_2.log",
+          "solution_name": "solution_bai_3_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 79,
+          "total": 100,
+          "score": 0.79,
+          "execution_time": 6.6231653690338135,
+          "log_file": "logs/team14_b3_solution_bai_3_bug_ver_1.log",
+          "solution_name": "solution_bai_3_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 6.833636045455933,
+          "log_file": "logs/team14_b3_solution.log",
+          "solution_name": "solution"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 2,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 3,
+      "completed_solutions": 3
+    }
+  },
+  "team15": {
+    "b1": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 10,
+          "total": 50,
+          "score": 0.2,
+          "execution_time": 4.280035018920898,
+          "log_file": "logs/team15_b1_solution_bai_1_bug_ver_3.log",
+          "solution_name": "solution_bai_1_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 20,
+          "total": 50,
+          "score": 0.4,
+          "execution_time": 36.111743688583374,
+          "log_file": "logs/team15_b1_solution_bai_1_bug_ver_2.log",
+          "solution_name": "solution_bai_1_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 4.645181179046631,
+          "log_file": "logs/team15_b1_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 42,
+          "total": 50,
+          "score": 0.84,
+          "execution_time": 4.281274080276489,
+          "log_file": "logs/team15_b1_solution_bai_1_bug_ver_1.log",
+          "solution_name": "solution_bai_1_bug_ver_1"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 3,
+      "p": 3,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b2": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 11.131935358047485,
+          "log_file": "logs/team15_b2_solution_bai_2_bug_ver_3.log",
+          "solution_name": "solution_bai_2_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 33,
+          "total": 100,
+          "score": 0.33,
+          "execution_time": 13.629590272903442,
+          "log_file": "logs/team15_b2_solution_bai_2_bug_ver_1.log",
+          "solution_name": "solution_bai_2_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 11.147628545761108,
+          "log_file": "logs/team15_b2_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 80,
+          "total": 100,
+          "score": 0.8,
+          "execution_time": 10.563303709030151,
+          "log_file": "logs/team15_b2_solution_bai_2_bug_ver_2.log",
+          "solution_name": "solution_bai_2_bug_ver_2"
+        }
+      ],
+      "total_score": 9.505795913942475,
+      "solution_score": 4,
+      "bug_score": 1.505795913942474,
+      "q": 3,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b3": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 25,
+          "total": 50,
+          "score": 0.5,
+          "execution_time": 3.6010799407958984,
+          "log_file": "logs/team15_b3_solution_bai_3_bug_ver_2.log",
+          "solution_name": "solution_bai_3_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 38,
+          "total": 50,
+          "score": 0.76,
+          "execution_time": 3.669820785522461,
+          "log_file": "logs/team15_b3_solution_bai_3_bug_ver_1.log",
+          "solution_name": "solution_bai_3_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 3.9731967449188232,
+          "log_file": "logs/team15_b3_solution.log",
+          "solution_name": "solution"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 2,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 3,
+      "completed_solutions": 3
+    }
+  },
+  "team16": {
+    "b1": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 25,
+          "total": 50,
+          "score": 0.5,
+          "execution_time": 3.596372127532959,
+          "log_file": "logs/team16_b1_solution_bai_1_bug_ver_3.log",
+          "solution_name": "solution_bai_1_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 20,
+          "total": 50,
+          "score": 0.4,
+          "execution_time": 35.344158411026,
+          "log_file": "logs/team16_b1_solution_bai_1_bug_ver_2.log",
+          "solution_name": "solution_bai_1_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 4.203173637390137,
+          "log_file": "logs/team16_b1_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 35,
+          "total": 50,
+          "score": 0.7,
+          "execution_time": 3.8586933612823486,
+          "log_file": "logs/team16_b1_solution_bai_1_bug_ver_1.log",
+          "solution_name": "solution_bai_1_bug_ver_1"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 3,
+      "p": 3,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b2": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 5.171727657318115,
+          "log_file": "logs/team16_b2_solution_bai_2_bug_ver_3.log",
+          "solution_name": "solution_bai_2_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 33,
+          "total": 50,
+          "score": 0.66,
+          "execution_time": 5.019593715667725,
+          "log_file": "logs/team16_b2_solution_bai_2_bug_ver_1.log",
+          "solution_name": "solution_bai_2_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 5.435193300247192,
+          "log_file": "logs/team16_b2_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 22,
+          "total": 50,
+          "score": 0.44,
+          "execution_time": 4.9994261264801025,
+          "log_file": "logs/team16_b2_solution_bai_2_bug_ver_2.log",
+          "solution_name": "solution_bai_2_bug_ver_2"
+        }
+      ],
+      "total_score": 9.505795913942475,
+      "solution_score": 4,
+      "bug_score": 1.505795913942474,
+      "q": 3,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b3": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 35,
+          "total": 73,
+          "score": 0.4794520547945205,
+          "execution_time": 5.175427198410034,
+          "log_file": "logs/team16_b3_solution_bai_3_bug_ver_2.log",
+          "solution_name": "solution_bai_3_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 57,
+          "total": 73,
+          "score": 0.7808219178082192,
+          "execution_time": 5.145004510879517,
+          "log_file": "logs/team16_b3_solution_bai_3_bug_ver_1.log",
+          "solution_name": "solution_bai_3_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 73,
+          "total": 73,
+          "score": 1.0,
+          "execution_time": 5.5387351512908936,
+          "log_file": "logs/team16_b3_solution.log",
+          "solution_name": "solution"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 2,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 3,
+      "completed_solutions": 3
+    }
+  },
+  "team17": {
+    "b1": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 43,
+          "total": 100,
+          "score": 0.43,
+          "execution_time": 7.946359634399414,
+          "log_file": "logs/team17_b1_solution_bai_1_bug_ver_3.log",
+          "solution_name": "solution_bai_1_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 40,
+          "total": 100,
+          "score": 0.4,
+          "execution_time": 71.22265219688416,
+          "log_file": "logs/team17_b1_solution_bai_1_bug_ver_2.log",
+          "solution_name": "solution_bai_1_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 100,
+          "total": 100,
+          "score": 1.0,
+          "execution_time": 8.403713703155518,
+          "log_file": "logs/team17_b1_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 70,
+          "total": 100,
+          "score": 0.7,
+          "execution_time": 7.6136322021484375,
+          "log_file": "logs/team17_b1_solution_bai_1_bug_ver_1.log",
+          "solution_name": "solution_bai_1_bug_ver_1"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 3,
+      "p": 3,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b2": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 96,
+          "total": 96,
+          "score": 1.0,
+          "execution_time": 52.585180044174194,
+          "log_file": "logs/team17_b2_solution_bai_2_bug_ver_3.log",
+          "solution_name": "solution_bai_2_bug_ver_3"
+        },
+        {
+          "status": "completed",
+          "passed": 51,
+          "total": 96,
+          "score": 0.53125,
+          "execution_time": 19.248197078704834,
+          "log_file": "logs/team17_b2_solution_bai_2_bug_ver_1.log",
+          "solution_name": "solution_bai_2_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 96,
+          "total": 96,
+          "score": 1.0,
+          "execution_time": 20.497661590576172,
+          "log_file": "logs/team17_b2_solution.log",
+          "solution_name": "solution"
+        },
+        {
+          "status": "completed",
+          "passed": 90,
+          "total": 96,
+          "score": 0.9375,
+          "execution_time": 16.95468020439148,
+          "log_file": "logs/team17_b2_solution_bai_2_bug_ver_2.log",
+          "solution_name": "solution_bai_2_bug_ver_2"
+        }
+      ],
+      "total_score": 9.505795913942475,
+      "solution_score": 4,
+      "bug_score": 1.505795913942474,
+      "q": 3,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 4,
+      "completed_solutions": 4
+    },
+    "b3": {
+      "status": "completed",
+      "solutions": [
+        {
+          "status": "completed",
+          "passed": 22,
+          "total": 50,
+          "score": 0.44,
+          "execution_time": 3.643686294555664,
+          "log_file": "logs/team17_b3_solution_bai_3_bug_ver_2.log",
+          "solution_name": "solution_bai_3_bug_ver_2"
+        },
+        {
+          "status": "completed",
+          "passed": 35,
+          "total": 50,
+          "score": 0.7,
+          "execution_time": 3.6287174224853516,
+          "log_file": "logs/team17_b3_solution_bai_3_bug_ver_1.log",
+          "solution_name": "solution_bai_3_bug_ver_1"
+        },
+        {
+          "status": "completed",
+          "passed": 50,
+          "total": 50,
+          "score": 1.0,
+          "execution_time": 4.029244422912598,
+          "log_file": "logs/team17_b3_solution.log",
+          "solution_name": "solution"
+        }
+      ],
+      "total_score": 10.0,
+      "solution_score": 4,
+      "bug_score": 2.0,
+      "q": 2,
+      "p": 2,
+      "has_solution": true,
+      "solution_passed": true,
+      "total_solutions": 3,
+      "completed_solutions": 3
+    }
+  }
+}
