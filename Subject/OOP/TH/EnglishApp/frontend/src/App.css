@@ -1,0 +1,199 @@
+:root {
+  --primary-color: #4f46e5; /* màu chính (buttons, links) */
+  --secondary-color: #6366f1;
+  --bg-light: #f9fafb;
+  --bg-dark: #1f2937;
+  --text-light: #fff;
+  --text-dark: #111827;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+/* App Container */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  box-shadow: var(--card-shadow);
+}
+
+.app-header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logout-btn {
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+  cursor: pointer;
+  font-weight: 500;
+}
+.logout-btn:hover {
+  background-color: #4338ca;
+}
+
+/* Navigation */
+.app-nav {
+  display: flex;
+  gap: 1rem;
+  padding: 0.75rem 2rem;
+  background-color: #e0e7ff;
+}
+.app-nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+  transition: 0.2s;
+}
+.app-nav a:hover {
+  color: var(--secondary-color);
+}
+
+/* Cards */
+.lesson-card, .word-item, .progress-table, .quiz, .login-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+button.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+button.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+button.btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+button.btn-secondary {
+  background-color: #e5e7eb;
+  color: var(--text-dark);
+}
+button.btn-secondary:hover {
+  background-color: #d1d5db;
+}
+
+/* Forms */
+input, select, textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+/* Dashboard Grid */
+.lessons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.lesson-card h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.2rem;
+}
+
+.lesson-card p {
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+}
+
+/* Quiz */
+.quiz {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.quiz-question h3 {
+  font-size: 1.1rem;
+}
+.answer-input {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.answer-input input {
+  flex: 1;
+}
+.quiz-result .score-card {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.score-percentage {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Progress Table */
+.progress-table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+.score-bar {
+  background-color: #e5e7eb;
+  border-radius: 12px;
+  position: relative;
+  height: 20px;
+}
+.score-fill {
+  background-color: var(--primary-color);
+  height: 100%;
+  border-radius: 12px 0 0 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-nav {
+    flex-direction: column;
+  }
+  .manager-content {
+    grid-template-columns: 1fr;
+  }
+  .answer-input {
+    flex-direction: column;
+  }
+}

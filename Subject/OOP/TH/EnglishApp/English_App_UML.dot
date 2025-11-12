@@ -9,7 +9,7 @@ digraph EnglishApp {
     Database [label="{\
         Database|\
         - dbPath : string\l\
-        - db : sqlite3*\\l\
+        - db : sqlite3*\l\
         |\
         + open() : bool\l\
         + close() : void\l\
@@ -22,6 +22,8 @@ digraph EnglishApp {
         |\
         + getWords() : vector\<Word\>\l\
         + getLessons() : vector\<Lesson*\>\l\
+        + addLesson(lesson : Lesson&) : bool\l\
+        + addWord(word : Word&, lessonId : int) : bool\l\
         + saveTest(test : Test*) : void\l\
     }"];
 
@@ -35,6 +37,8 @@ digraph EnglishApp {
         + start() : void\l\
         + addUser(user : User*) : void\l\
         + runLesson(user : User*, lesson : Lesson*) : void\l\
+        + addLesson(title : string, type : string) : void\l\
+        + addWordToLesson(lessonId : int, word : Word) : void\l\
     }"];
 
     Logger [label="{\
@@ -47,7 +51,7 @@ digraph EnglishApp {
     LessonFactory [label="{\
         LessonFactory|\
         |\
-        + createLesson(type : string) : Lesson*\l\
+        + createLesson(type : string, id : int, title : string, words : vector\<Word\>) : Lesson*\l\
     }"];
 
     Word [label="{\
@@ -58,6 +62,8 @@ digraph EnglishApp {
         - ipa : string\l\
         - type : string\l\
         |\
+        + getText() : string\l\
+        + getMeaning() : string\l\
         + display() : void\l\
         + loadFromDB(db : Database&) : void\l\
     }"];
@@ -67,18 +73,18 @@ digraph EnglishApp {
         # id : int\l\
         # title : string\l\
         # description : string\l\
-        # words : vector\<Word\>\l\
         |\
-        + display() : void = 0\l\
-        + loadFromDB(db : Database&) : void = 0\l\
+        + start() : void = 0\l\
+        + showResult() : void = 0\l\
     }"];
 
     VocabularyLesson [label="{\
         VocabularyLesson|\
-        - topic : string\l\
+        - words : vector\<Word\>\l\
         |\
-        + display() : void\l\
-        + loadFromDB(db : Database&) : void\l\
+        + start() : void\l\
+        + showResult() : void\l\
+        + getWords() : const vector\<Word\>&\l\
     }"];
 
     GrammarLesson [label="{\
@@ -86,8 +92,8 @@ digraph EnglishApp {
         - rule : string\l\
         - example : string\l\
         |\
-        + display() : void\l\
-        + loadFromDB(db : Database&) : void\l\
+        + start() : void\l\
+        + showResult() : void\l\
     }"];
 
     User [label="{\
@@ -115,24 +121,31 @@ digraph EnglishApp {
         + saveToDB(db : Database&) : void\l\
     }"];
 
+    // GUI classes (PyQt5)
     MainWindow [label="{\
-        MainWindow|\
+        MainWindow (PyQt5)|\
         - lessonList : QListWidget*\l\
+        - addLessonButton : QPushButton*\l\
+        - addWordButton : QPushButton*\l\
         - startButton : QPushButton*\l\
         - lessonWidget : LessonWidget*\l\
         - app : EnglishApp*\l\
         |\
         + startLesson() : void\l\
+        + addLessonDialog() : void\l\
+        + addWordDialog() : void\l\
     }"];
 
     LessonWidget [label="{\
-        LessonWidget|\
+        LessonWidget (PyQt5)|\
         - titleLabel : QLabel*\l\
-        - contentLabel : QLabel*\l\
+        - questionLabel : QLabel*\l\
+        - answerInput : QLineEdit*\l\
         - nextButton : QPushButton*\l\
         - app : EnglishApp*\l\
         |\
         + loadLesson(idx : int) : void\l\
+        + checkAnswer() : void\l\
     }"];
 
     // =====================
