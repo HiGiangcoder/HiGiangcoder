@@ -1,0 +1,169 @@
+digraph EnglishApp {
+    rankdir=TB;
+    node [shape=record, fontname="Noto Sans Mono", fontsize=10];
+
+    // =====================
+    // ==== CLASS NODES ====
+    // =====================
+
+    Database [label="{\
+        Database|\
+        - dbPath : string\l\
+        - db : sqlite3*\\l\
+        |\
+        + open() : bool\l\
+        + close() : void\l\
+        + executeQuery(query : string) : bool\l\
+        + getResults(query : string) : vector\<vector\<string\>\>\l\
+    }"];
+
+    DatabaseDAO [label="{\
+        DatabaseDAO|\
+        |\
+        + getWords() : vector\<Word\>\l\
+        + getLessons() : vector\<Lesson*\>\l\
+        + saveTest(test : Test*) : void\l\
+    }"];
+
+    EnglishApp [label="{\
+        EnglishApp|\
+        - users : vector\<User*\>\l\
+        - lessons : vector\<Lesson*\>\l\
+        - databaseDAO : DatabaseDAO*\l\
+        - logger : Logger*\l\
+        |\
+        + start() : void\l\
+        + addUser(user : User*) : void\l\
+        + runLesson(user : User*, lesson : Lesson*) : void\l\
+    }"];
+
+    Logger [label="{\
+        Logger|\
+        |\
+        + logInfo(msg : string) : void\l\
+        + logError(msg : string) : void\l\
+    }"];
+
+    LessonFactory [label="{\
+        LessonFactory|\
+        |\
+        + createLesson(type : string) : Lesson*\l\
+    }"];
+
+    Word [label="{\
+        Word|\
+        - id : int\l\
+        - text : string\l\
+        - meaning : string\l\
+        - ipa : string\l\
+        - type : string\l\
+        |\
+        + display() : void\l\
+        + loadFromDB(db : Database&) : void\l\
+    }"];
+
+    Lesson [label="{\
+        Lesson (abstract)|\
+        # id : int\l\
+        # title : string\l\
+        # description : string\l\
+        # words : vector\<Word\>\l\
+        |\
+        + display() : void = 0\l\
+        + loadFromDB(db : Database&) : void = 0\l\
+    }"];
+
+    VocabularyLesson [label="{\
+        VocabularyLesson|\
+        - topic : string\l\
+        |\
+        + display() : void\l\
+        + loadFromDB(db : Database&) : void\l\
+    }"];
+
+    GrammarLesson [label="{\
+        GrammarLesson|\
+        - rule : string\l\
+        - example : string\l\
+        |\
+        + display() : void\l\
+        + loadFromDB(db : Database&) : void\l\
+    }"];
+
+    User [label="{\
+        User|\
+        - id : int\l\
+        - name : string\l\
+        - email : string\l\
+        - lessons : vector\<Lesson*\>\l\
+        - tests : vector\<Test*\>\l\
+        |\
+        + addLesson(lesson : Lesson*) : void\l\
+        + addTest(test : Test*) : void\l\
+        + displayProgress() : void\l\
+    }"];
+
+    Test [label="{\
+        Test|\
+        - id : int\l\
+        - title : string\l\
+        - score : int\l\
+        - user : User*\l\
+        |\
+        + evaluate() : void\l\
+        + display() : void\l\
+        + saveToDB(db : Database&) : void\l\
+    }"];
+
+    MainWindow [label="{\
+        MainWindow|\
+        - lessonList : QListWidget*\l\
+        - startButton : QPushButton*\l\
+        - lessonWidget : LessonWidget*\l\
+        - app : EnglishApp*\l\
+        |\
+        + startLesson() : void\l\
+    }"];
+
+    LessonWidget [label="{\
+        LessonWidget|\
+        - titleLabel : QLabel*\l\
+        - contentLabel : QLabel*\l\
+        - nextButton : QPushButton*\l\
+        - app : EnglishApp*\l\
+        |\
+        + loadLesson(idx : int) : void\l\
+    }"];
+
+    // =====================
+    // ==== RELATIONSHIPS ====
+    // =====================
+
+    VocabularyLesson -> Lesson [arrowhead="empty"];
+    GrammarLesson -> Lesson [arrowhead="empty"];
+
+    Lesson -> Word [arrowhead="diamond", dir="both"];
+    User -> Lesson [arrowhead="none"];
+    User -> Test [arrowhead="none"];
+
+    Lesson -> Database [style="dashed"];
+    Test -> Database [style="dashed"];
+    Word -> Database [style="dashed"];
+
+    EnglishApp -> User [arrowhead="none"];
+    EnglishApp -> Lesson [arrowhead="none"];
+    EnglishApp -> DatabaseDAO [arrowhead="none"];
+    EnglishApp -> Logger [arrowhead="none"];
+
+    LessonFactory -> Lesson [arrowhead="none"];
+    DatabaseDAO -> Database [arrowhead="none"];
+    DatabaseDAO -> Word [arrowhead="none"];
+    DatabaseDAO -> Lesson [arrowhead="none"];
+    DatabaseDAO -> Test [arrowhead="none"];
+
+    // GUI relationships
+    MainWindow -> LessonWidget [arrowhead="none"];
+    MainWindow -> EnglishApp [arrowhead="none"];
+    LessonWidget -> Lesson [arrowhead="none"];
+    LessonWidget -> User [arrowhead="none"];
+}

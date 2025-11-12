@@ -3,28 +3,17 @@
 #include <vector>
 using namespace std;
 
+/*
+Chức năng: Lưu các bài học ngữ pháp
+*/
 class GrammarLesson : public Lesson {
 private:
     vector<string> rules;
+    int points;
 public:
     GrammarLesson(int id, const string& title, vector<string> r);
     void start() override;
     void showResult() override;
+    const std::vector<string>& getRules() const;
+    int getGrammarPoints();
 };
-
-GrammarLesson::GrammarLesson(int id, const string& title, vector<string> r) {
-    this->id = id;
-    this->title = title;
-    this->rules = r;
-}
-
-void GrammarLesson::start() {
-    printf("Starting Grammar Lesson: %s\n", title.c_str());
-    for (const string& rule : rules) {
-        printf("Rule: %s\n", rule.c_str());
-    }
-}
-
-void GrammarLesson::showResult() {
-    printf("Grammar Lesson %s completed. Total rules: %zu\n", title.c_str(), rules.size());
-}
